@@ -1,0 +1,2003 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Lapland Travel Assistant – Activities in Rovaniemi, planned for you</title>
+<meta name="description" content="Northern lights, huskies, reindeer, snowmobiling and winter adventures in Rovaniemi. Tell us your dates, pick what you’d love, and we check availability and book it all for you.">
+<link rel="canonical" href="https://laplandtravelassistant.com/">
+<meta name="theme-color" content="#0E2A3B">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Lapland Travel Assistant">
+<meta property="og:title" content="Lapland Travel Assistant – Activities in Rovaniemi, planned for you">
+<meta property="og:description" content="Tell us your dates and pick what you’d love. We check availability with local partners and book everything for you.">
+<meta property="og:url" content="https://laplandtravelassistant.com/">
+<meta property="og:image" content="https://laplandtravelassistant.com/images/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preload" href="fonts/fraunces.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/dm-sans-400.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* Fonts are hosted with the site (no Google Fonts connection) */
+@font-face{font-family:Fraunces;font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/fraunces.woff2) format('woff2')}
+@font-face{font-family:Fraunces;font-style:italic;font-weight:100 900;font-display:swap;src:url(fonts/fraunces-italic.woff2) format('woff2')}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/dm-sans-400.woff2) format('woff2')}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/dm-sans-500.woff2) format('woff2')}
+@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:swap;src:url(fonts/dm-sans-700.woff2) format('woff2')}
+@font-face{font-family:Cinzel;font-style:normal;font-weight:600;font-display:swap;src:url(fonts/cinzel-600.woff2) format('woff2')}
+.hp{position:absolute!important;left:-9999px!important;width:1px;height:1px;overflow:hidden}
+.btn.busy{opacity:.6;pointer-events:none}
+@media (max-width:600px){ body.in-builder .top .logo > span{display:none} body.in-builder .top .wrap{gap:12px} body.in-builder #topright .link{white-space:nowrap;font-size:14px} }
+.sm-only{display:none}
+/* odd number of categories: the "Ready to pick" card fills the empty slot instead of its own row */
+@media (min-width:621px){ .cats > .cta-card.fill{grid-column:auto;flex-direction:column;align-items:flex-start;justify-content:center;padding:30px} }
+@media (max-width:420px){ .lg-only{display:none} .sm-only{display:inline} }
+.err a{color:inherit}
+:root{
+  --bg:#F6F8F8; --surface:#FFFFFF; --ink:#0E2A3B; --muted:#4A5A64; --line:#D9E0E3;
+  --panel:#0E2A3B; --panel-ink:#FFFFFF; --panel-muted:#C9D6DD; --gold:#C9A24A; --gold-ink:#8A6A1F; --gold-soft:#F4EEDF; --ph:#DCE4E8; --ph-ink:#4A5A64;
+  --serif:Fraunces, Georgia, "Times New Roman", serif;
+  --sans:"DM Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --logo:Cinzel, Georgia, serif;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0B1C26; --surface:#12293A; --ink:#EEF3F5; --muted:#A9BAC4; --line:#25414F;
+    --panel:#16364A; --ph:#1B3647; --ph-ink:#A9BAC4; --gold-ink:#D9B55E; --gold-soft:#1E3240;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0B1C26; --surface:#12293A; --ink:#EEF3F5; --muted:#A9BAC4; --line:#25414F;
+  --panel:#16364A; --ph:#1B3647; --ph-ink:#A9BAC4; --gold-ink:#D9B55E; --gold-soft:#1E3240;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 80px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
+img,svg{max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:600;line-height:1.1;margin:0}
+p{margin:0}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+.wrap{width:100%;max-width:1240px;margin:0 auto;padding:0 32px}
+@media (max-width:640px){.wrap{padding:0 20px}}
+
+/* header */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 92%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:24px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none;flex-shrink:0;background:none;border:0;padding:0;cursor:pointer}
+.logo .w1{font-family:var(--logo);font-weight:600;font-size:21px;letter-spacing:.1em;line-height:1;display:block}
+.logo .w2{font-family:var(--logo);font-weight:600;font-size:8.5px;letter-spacing:.34em;line-height:1;display:block;margin-top:5px}
+.nav{display:flex;gap:28px}
+.nav button{background:none;border:0;padding:8px 0;cursor:pointer;font-weight:500;font-size:15px}
+.nav button:hover{text-decoration:underline;text-underline-offset:4px}
+@media (max-width:900px){.nav{display:none}}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 24px;border-radius:999px;font-weight:700;font-size:15px;cursor:pointer;text-decoration:none;border:1.5px solid var(--ink);background:var(--ink);color:var(--bg);transition:transform .15s ease}
+.btn:active{transform:scale(.98)}
+.btn.ghost{background:transparent;color:var(--ink)}
+.btn.gold{background:var(--gold);border-color:var(--gold);color:#0E2A3B}
+.btn.small{min-height:44px;padding:8px 18px;font-size:14px}
+.btn[disabled]{opacity:.4;cursor:not-allowed}
+.link{background:none;border:0;padding:10px 0;cursor:pointer;font-weight:500;display:inline-flex;align-items:center;gap:8px;text-decoration:underline;text-underline-offset:4px}
+
+/* photo placeholder */
+.ph{background:var(--ph);border-radius:18px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:14px}
+.ph span{font-size:12px;color:var(--ph-ink);position:relative}
+.ph svg{position:absolute;right:14px;top:14px;opacity:.35}
+.ph.photo{padding:0}
+.ph.photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.banner{height:260px;border-radius:24px;margin-top:18px}
+@media (max-width:640px){.banner{height:180px}}
+
+/* hero */
+.hero{padding:64px 0 48px}
+.hero .grid{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.hero h1{font-size:clamp(42px,5.4vw,70px);letter-spacing:-.01em}
+.hero p{font-size:20px;color:var(--muted);max-width:44ch;margin-top:22px}
+h1[tabindex="-1"]:focus{outline:none}
+.hero p.hero-sub{font-size:17px;margin-top:12px}
+.hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:32px}
+.scene{background:var(--panel);border-radius:28px;aspect-ratio:5/4;position:relative;overflow:hidden}
+.scene svg{position:absolute;inset:0;width:100%;height:100%}
+.scene .hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.scene .cap{position:absolute;left:20px;bottom:18px;font-size:12px;color:var(--panel-muted)}
+@media (max-width:900px){.hero .grid{grid-template-columns:1fr;gap:32px}.hero{padding-top:36px}}
+
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:22px 0;display:flex;flex-wrap:wrap;gap:16px 40px;justify-content:space-between}
+.trust div{display:flex;align-items:center;gap:10px;font-size:15px}
+
+section.block{padding:88px 0 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:32px}
+.sec-head h2{font-size:clamp(32px,3.6vw,46px)}
+.sec-head p{color:var(--muted);margin-top:10px;max-width:52ch}
+
+/* category cards */
+.cats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+@media (max-width:980px){.cats{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:620px){.cats{grid-template-columns:1fr}}
+.cat{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;text-align:left;cursor:pointer;padding:0;color:var(--ink)}
+.cat:hover{border-color:var(--ink)}
+.cat .ph{border-radius:0;height:190px}
+.cat .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px}
+.cat h3{font-size:24px}
+.cat .d{color:var(--muted);font-size:15px;line-height:1.5}
+.cat .n{font-size:14px;font-weight:700;margin-top:6px;display:flex;align-items:center;gap:8px}
+.cat .badge{position:absolute;top:14px;left:14px;background:var(--gold);color:#0E2A3B;font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.cat .cnt{position:absolute;top:14px;right:14px;background:var(--ink);color:var(--bg);font-size:12px;font-weight:700;padding:5px 12px;border-radius:999px}
+.cats.two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media (max-width:620px){.cats.two{grid-template-columns:1fr}}
+.cta-card{background:var(--panel);color:var(--panel-ink);border-radius:22px;padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:20px}
+.cta-card p{color:var(--panel-muted)}
+
+/* how */
+.how{background:var(--panel);color:var(--panel-ink);border-radius:30px;padding:64px}
+.how h2{font-size:clamp(32px,3.6vw,46px)}
+.how ol{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:48px}
+.how li{display:flex;flex-direction:column;gap:12px}
+.how .num{width:46px;height:46px;border-radius:999px;border:1.5px solid var(--gold);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-weight:600;font-size:19px}
+.how h3{font-size:23px}
+.how p{color:var(--panel-muted);font-size:16px}
+@media (max-width:860px){.how{padding:36px 24px}.how ol{grid-template-columns:1fr;gap:28px}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.split h2{font-size:clamp(32px,3.6vw,46px)}
+.split p{color:var(--muted);margin:18px 0 26px;max-width:46ch}
+@media (max-width:860px){.split{grid-template-columns:1fr;gap:28px}}
+
+footer.site{background:var(--panel);color:var(--panel-ink);margin-top:96px;padding:56px 0 64px}
+footer.site .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer.site .col{display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--panel-muted)}
+footer.site .col b{color:var(--panel-ink)}
+@media (max-width:760px){footer.site .wrap{grid-template-columns:1fr}}
+
+/* builder */
+.steps{display:flex;align-items:center;gap:12px}
+.steps .s{display:flex;align-items:center;gap:8px;font-size:14px;color:var(--muted)}
+.steps .dot{width:26px;height:26px;border-radius:999px;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;background:var(--surface)}
+.steps .s.on{color:var(--ink);font-weight:700}
+.steps .s.on .dot,.steps .s.done .dot{background:var(--ink);border-color:var(--ink);color:var(--bg)}
+.steps .bar{width:36px;height:1.5px;background:var(--line)}
+.steps .bar.done{background:var(--ink)}
+@media (max-width:720px){.steps .s .t{display:none}.steps .s.on .t{display:inline}.steps .bar{width:16px}}
+
+.builder{padding-top:48px;padding-bottom:140px}
+.b-grid{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:40px;align-items:start}
+@media (max-width:1020px){.b-grid{grid-template-columns:1fr}}
+.b-title h1{font-size:clamp(34px,4vw,48px)}
+.b-title p{color:var(--muted);margin-top:10px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:32px}
+@media (max-width:640px){.card{padding:22px}}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.fields .full{grid-column:1/-1}
+@media (max-width:620px){.fields{grid-template-columns:1fr}}
+.field{display:flex;flex-direction:column;gap:8px}
+.field label{font-size:14px;font-weight:700}
+.field input,.field select,.field textarea{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--surface);font-size:16px;min-height:50px}
+.field textarea{resize:vertical;min-height:120px}
+.field .hint{font-size:13px;color:var(--muted)}
+.stepper{display:flex;align-items:center;border:1px solid var(--line);border-radius:12px;min-height:50px;justify-content:space-between;padding:0 6px;background:var(--surface)}
+.stepper button{width:44px;height:44px;border:0;background:none;border-radius:10px;cursor:pointer;font-size:22px;line-height:1}
+.stepper button:hover{background:var(--bg)}
+.stepper output{font-weight:700}
+.err{color:#B3261E;font-size:14px;font-weight:500;min-height:1em}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .err{color:#FFB4AB}}
+:root[data-theme="dark"] .err{color:#FFB4AB}
+.check{display:flex;align-items:flex-start;gap:12px;font-size:15px;cursor:pointer}
+.check input{width:20px;height:20px;margin-top:3px;accent-color:var(--ink)}
+.row-actions{display:flex;justify-content:space-between;align-items:center;margin-top:28px;gap:16px;flex-wrap:wrap}
+
+/* activity list */
+.acts{display:flex;flex-direction:column;gap:16px;margin-top:28px}
+.act{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;padding:14px;display:grid;grid-template-columns:180px minmax(0,1fr) auto;gap:22px;align-items:center}
+.act.added{border-color:var(--ink)}
+.act .ph{height:124px;border-radius:14px}
+.act h3{font-size:22px}
+.act p{color:var(--muted);font-size:15px;line-height:1.5;margin-top:6px}
+.act .meta{display:flex;gap:18px;flex-wrap:wrap;font-size:14px;color:var(--muted);margin-top:10px}
+.act .meta span{display:flex;align-items:center;gap:6px}
+.act .meta span.pr{display:block;flex-basis:100%;color:var(--muted)}
+.act .go{padding-right:6px}
+@media (max-width:720px){.act{grid-template-columns:1fr;gap:14px}.act .ph{height:160px}.act .go{padding:0}.act .go .btn{width:100%}}
+
+.more{margin-top:12px;border-top:1px solid var(--line);padding-top:10px}
+.more summary{cursor:pointer;font-weight:700;font-size:14px;list-style:none;display:inline-flex;align-items:center;gap:6px;padding:6px 0}
+.more summary::-webkit-details-marker{display:none}
+.more summary::after{content:"+";font-size:18px;line-height:1}
+.more[open] summary::after{content:"\2212"}
+.more .desc p{color:var(--ink);font-size:15.5px;line-height:1.65;margin-top:12px}
+.more .facts{display:flex;flex-wrap:wrap;gap:8px 22px;margin-top:16px;font-size:14px}
+.more .facts b{font-weight:700}
+.more .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:18px}
+.more h4{font-family:var(--sans);font-size:13px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
+.more ul{margin:0;padding-left:18px;font-size:14.5px;line-height:1.55;color:var(--ink)}
+.more li{margin:4px 0}
+.more .know{margin-top:18px;background:var(--bg);border-radius:14px;padding:16px 18px}
+@media (max-width:620px){.more .cols{grid-template-columns:1fr}}
+.act.rich{align-items:start}
+.act > .more{grid-column:2 / -1;margin-top:0}
+@media (max-width:720px){.act > .more{grid-column:1 / -1}}
+.price{color:var(--ink)}
+
+/* gold accents */
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:12.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--gold-ink);margin-bottom:14px}
+.eyebrow svg{flex-shrink:0}
+.how .eyebrow,.panel-eyebrow{color:var(--gold)}
+.hero h1 em{font-style:italic;color:var(--gold-ink);font-weight:500}
+.trust{border-top:1px solid color-mix(in srgb,var(--gold) 45%,var(--line));border-bottom:1px solid color-mix(in srgb,var(--gold) 45%,var(--line))}
+.trust svg{color:var(--gold)}
+.cat .n{color:var(--gold-ink)}
+.cat:hover{border-color:var(--gold)!important;box-shadow:0 10px 30px -18px rgba(201,162,74,.6)}
+.cat{transition:border-color .15s ease,box-shadow .15s ease}
+.how .num{background:var(--gold);color:#0E2A3B;border-color:var(--gold)!important}
+.band{background:var(--gold-soft);border-radius:30px;padding:56px}
+@media (max-width:860px){.band{padding:32px 22px}}
+footer.site{border-top:3px solid var(--gold)}
+footer.site .col b{color:var(--gold)!important}
+.act.added{border-color:var(--gold)!important}
+.btn.ghost[aria-pressed="true"]{border-color:var(--gold);color:var(--ink)}
+.btn.ghost[aria-pressed="true"] svg{color:var(--gold-ink)}
+.steps .s.on .dot{background:var(--gold)!important;border-color:var(--gold)!important;color:#0E2A3B!important}
+.b-title h1::before,.sec-star::before{content:"";display:block;width:34px;height:3px;border-radius:3px;background:var(--gold);margin-bottom:16px}
+.more summary{color:var(--gold-ink)}
+.tray h2::after{content:"";display:inline-block;width:8px;height:8px;margin-left:8px;background:var(--gold);transform:rotate(45deg) translateY(-3px);border-radius:1px}
+
+.cats > .cta-card{grid-column:1/-1;flex-direction:row;align-items:center;gap:28px;padding:30px 36px}
+.cats > .cta-card > div:nth-child(2){flex:1}
+@media (max-width:620px){.cats > .cta-card{flex-direction:column;align-items:flex-start;padding:26px}}
+
+/* scroll reveal: small expansion as boxes come into view */
+.rv{opacity:0;transform:scale(.96) translateY(10px);transition:opacity .6s ease,transform .7s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* elevated */
+.elev-mark{display:inline-flex;flex-direction:column;align-items:center;gap:0;color:var(--gold);text-align:center}
+.elev-mark svg{width:26px;height:26px;margin-bottom:10px}
+.elev-mark .em-l{font-family:var(--logo);font-weight:600;letter-spacing:.14em;font-size:34px;line-height:1;color:#F6F8F8}
+.elev-mark .em-t{font-family:var(--logo);font-weight:600;letter-spacing:.42em;font-size:11px;margin-top:8px;color:#C9D6DD;padding-left:.42em}
+.elev-mark .em-e{font-family:var(--logo);font-weight:600;letter-spacing:.5em;font-size:15px;margin-top:16px;padding:8px 0 0 .5em;border-top:1px solid var(--gold);color:var(--gold)}
+.elev-mark.sm .em-l{font-size:20px}.elev-mark.sm .em-t{font-size:8px}.elev-mark.sm .em-e{font-size:11px;margin-top:10px}.elev-mark.sm svg{width:18px;height:18px;margin-bottom:6px}
+.elev-mark.lg .em-l{font-size:44px}.elev-mark.lg .em-t{font-size:13px}.elev-mark.lg .em-e{font-size:18px}
+.elev-panel{background:#0E2A3B;color:#F6F8F8;border-radius:30px;display:grid;grid-template-columns:1fr 1.2fr;overflow:hidden;border:1px solid color-mix(in srgb,var(--gold) 40%,transparent)}
+.elev-left{display:flex;align-items:center;justify-content:center;padding:64px 32px;background:#0B2231;border-right:1px solid rgba(201,162,74,.25)}
+.elev-right{padding:56px 52px}
+.elev-right h2{font-size:clamp(30px,3.4vw,42px);color:#F6F8F8}
+.elev-right p{color:#C9D6DD;margin-top:14px;max-width:46ch}
+.elev-right .eyebrow{color:var(--gold)}
+.btn.on-dark{color:#F6F8F8;border-color:rgba(246,248,248,.5);font-weight:500}
+@media (max-width:860px){.elev-panel{grid-template-columns:1fr}.elev-left{border-right:0;border-bottom:1px solid rgba(201,162,74,.25);padding:44px 24px}.elev-right{padding:32px 24px}}
+.elev-hero{background:#0E2A3B;color:#F6F8F8;text-align:center;padding:64px 0 56px}
+.elev-hero h1{font-size:clamp(32px,4.2vw,50px);margin-top:28px;color:#F6F8F8}
+.elev-hero p{color:#C9D6DD;max-width:56ch;margin:14px auto 0}
+.field select{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--surface);font-size:16px;min-height:50px}
+/* packages */
+.pkgs{margin-top:28px}
+.pkgs h2{font-size:clamp(28px,3vw,36px)}
+.pkgs > p{color:var(--muted);margin-top:8px;max-width:60ch}
+.pkg-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:22px}
+@media (max-width:620px){.pkg-grid{grid-template-columns:1fr}}
+.pkg{background:var(--surface);border:1.5px solid var(--line);border-radius:22px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.pkg.added{border-color:var(--gold)}
+.pkg .tier{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold-ink)}
+.pkg h3{font-size:23px}
+.pkg p{color:var(--muted);font-size:15px;line-height:1.5}
+.pkg .pkg-price{color:var(--ink);margin-top:auto;padding-top:6px}
+.pkg-btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
+.pkg.elevated{background:#0E2A3B;border-color:var(--gold);align-items:flex-start}
+.pkg.elevated h3{color:#F6F8F8;margin-top:10px}.pkg.elevated p{color:#C9D6DD}
+.pkg.elevated .elev-mark{align-items:flex-start;text-align:left}
+.pkg-grid.four{grid-template-columns:repeat(4,minmax(0,1fr))}
+@media (max-width:1100px){.pkg-grid.four{grid-template-columns:1fr 1fr}}
+@media (max-width:620px){.pkg-grid.four{grid-template-columns:1fr}}
+#packages .pkgs{margin-top:0}
+.or-pick{font-size:24px;margin-top:40px}
+/* packages page + flipbook */
+.pk-h1{font-size:clamp(38px,4.6vw,56px)}
+.pk-lead{color:var(--muted);max-width:62ch;margin-top:12px}
+.shelf{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:28px;margin-top:40px}
+@media (max-width:1000px){.shelf{grid-template-columns:1fr 1fr}}
+@media (max-width:540px){.shelf{grid-template-columns:1fr}}
+.shelf-item{display:flex;flex-direction:column;gap:12px}
+.shelf-item p{color:var(--muted);font-size:15px;line-height:1.5}
+.mini-book{aspect-ratio:3/4;border:0;cursor:pointer;border-radius:6px 16px 16px 6px;background:linear-gradient(90deg,#E9E1CF 0,#F7F2E7 6%,#FBF8F1 100%);box-shadow:inset 6px 0 10px -6px rgba(0,0,0,.25),0 18px 30px -18px rgba(14,42,59,.55);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:22px;text-align:center;color:#0E2A3B;border-left:4px solid #C9A24A;transition:transform .25s ease,box-shadow .25s ease}
+.mini-book:hover{transform:translateY(-6px) rotate(-1deg);box-shadow:inset 6px 0 10px -6px rgba(0,0,0,.25),0 26px 40px -18px rgba(14,42,59,.6)}
+.mini-book .mb-star{color:#C9A24A}.mini-book .mb-star svg{width:22px;height:22px}
+.mini-book .mb-tier{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:#8A6A1F}
+.mini-book .mb-name{font-family:var(--serif);font-size:24px;font-weight:600;line-height:1.15}
+.mini-book .mb-brand{font-family:var(--logo);font-size:9px;letter-spacing:.24em;margin-top:8px;color:#4A5A64}
+.mini-book.elevated{background:linear-gradient(90deg,#08202E 0,#0E2A3B 8%,#12344A 100%);color:#F6F8F8}
+.mini-book.elevated .mb-tier{color:#C9A24A}.mini-book.elevated .mb-brand{color:#C9D6DD}
+.shelf-item .chosen{display:inline-flex;align-items:center;gap:6px;font-weight:700;font-size:14px;color:var(--gold-ink)}
+.pkg-banner{display:flex;align-items:center;gap:12px;margin-top:22px;padding:16px 20px;border:1.5px solid color-mix(in srgb,var(--gold) 60%,var(--line));background:var(--gold-soft);border-radius:16px;text-decoration:none;color:var(--ink)}
+.pkg-banner svg:first-child{color:var(--gold)}
+.pkg-banner span{flex:1;font-size:15px}
+.flip{display:none;position:fixed;inset:0;z-index:60;background:rgba(5,15,22,.82);align-items:center;justify-content:center;padding:16px}
+.flip.open{display:flex}
+.flip-in{width:100%;max-width:1000px;display:flex;flex-direction:column;gap:14px;color:#F6F8F8}
+.fb-top{display:flex;justify-content:space-between;align-items:center}
+.fb-top .eyebrow{color:var(--gold)}
+.fb-stage{display:flex;justify-content:center;perspective:2400px}
+.book{--w:min(420px,44vw);--h:calc(var(--w) * 1.36);position:relative;width:calc(var(--w) * 2);height:var(--h);transition:transform .8s cubic-bezier(.3,.7,.2,1)}
+.book.closed-front{transform:translateX(calc(var(--w) * -.5))}
+.book.closed-back{transform:translateX(calc(var(--w) * .5))}
+.leaf{position:absolute;left:50%;top:0;width:50%;height:100%;transform-origin:left center;transform-style:preserve-3d;transition:transform .9s cubic-bezier(.3,.7,.2,1);cursor:pointer}
+.leaf.flipped{transform:rotateY(-180deg)}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;background:#FBF8F1;color:#0E2A3B;overflow:hidden;border-radius:0 10px 10px 0;box-shadow:inset 14px 0 18px -14px rgba(0,0,0,.28)}
+.face.back{transform:rotateY(180deg);border-radius:10px 0 0 10px;box-shadow:inset -14px 0 18px -14px rgba(0,0,0,.28)}
+.fb-cover{height:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;padding:9%;background:linear-gradient(160deg,#FBF8F1,#F1E9D6);border-left:5px solid #C9A24A}
+.book.elevated .fb-cover{background:#0E2A3B;color:#F6F8F8}
+.fb-cover .fb-brand{font-family:var(--logo);font-weight:600;letter-spacing:.14em;font-size:clamp(14px,2vw,22px);display:flex;flex-direction:column;align-items:center}
+.fb-cover .fb-brand small{font-size:.38em;letter-spacing:.4em;margin-top:6px}
+.fb-cover .fb-tier{font-size:11px;font-weight:700;letter-spacing:.2em;text-transform:uppercase;color:#8A6A1F;border-top:1px solid #C9A24A;padding-top:12px;margin-top:6px}
+.book.elevated .fb-tier{color:#C9A24A}
+.fb-cover h3{font-size:clamp(20px,2.8vw,34px)}
+.fb-cover p{font-size:clamp(11px,1.3vw,14px);color:#4A5A64;max-width:28ch}
+.book.elevated .fb-cover p{color:#C9D6DD}
+.fb-cover .fb-hint{font-size:12px;color:#8A6A1F;margin-top:10px}
+.fb-cover.back{border-left:0;border-right:5px solid #C9A24A}
+.fb-in{height:100%;padding:8% 9% 12%;position:relative;display:flex;flex-direction:column;gap:3%}
+.book.elevated .face:not(:has(.fb-cover)){background:#F7F4EC}
+.fb-eye{font-size:clamp(9px,1vw,11px);font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#8A6A1F}
+.fb-in h4{font-family:var(--serif);font-weight:600;font-size:clamp(14px,2vw,22px);line-height:1.15}
+.fb-photo{flex:0 0 36%;border:1.5px dashed #D8CBAA;border-radius:8px;display:flex;align-items:center;justify-content:center;background:rgba(201,162,74,.07)}
+.fb-photo span{font-size:11px;color:#8A7A58}
+.fb-lines{display:flex;flex-direction:column;gap:7px}
+.fb-lines i{display:block;height:7px;border-radius:4px;background:#E8E0CC}
+.fb-days{display:grid;gap:10px}
+.fb-days > div,.fb-sched > div{display:grid;gap:6px;padding-bottom:8px;border-bottom:1px solid #EDE5D2}
+.fb-days b,.fb-sched b{font-size:12px;color:#0E2A3B}
+.fb-sched{display:grid;gap:10px}
+.fb-list{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.fb-list li{display:flex;align-items:center;gap:10px}
+.fb-list li::before{content:"";width:8px;height:8px;border-radius:2px;background:#C9A24A;transform:rotate(45deg);flex-shrink:0}
+.fb-list .fb-lines{flex:1}
+.fb-choose{margin-top:auto;display:flex;flex-direction:column;align-items:flex-start;gap:8px}
+.fb-choose span{font-size:12px;color:#4A5A64}
+.fb-foot{position:absolute;left:9%;right:9%;bottom:4%;display:flex;justify-content:space-between;font-size:10px;color:#8A7A58;border-top:1px solid #EDE5D2;padding-top:6px}
+.fb-ctrl{display:flex;justify-content:center;align-items:center;gap:18px}
+.fb-ctrl span{min-width:110px;text-align:center;font-size:14px;color:#C9D6DD}
+.fb-ctrl .btn.ghost{color:#F6F8F8;border-color:rgba(246,248,248,.5)}
+.flip .x{background:transparent;color:#F6F8F8;border-color:rgba(246,248,248,.4)}
+@media (max-width:640px){.book{--w:44vw}.fb-in{padding:7% 7% 14%}.fb-foot{font-size:8px}}
+@media (prefers-reduced-motion:reduce){.leaf,.book{transition:none}}
+
+/* modal */
+.modal{display:none;position:fixed;inset:0;z-index:50;background:rgba(5,15,22,.6);align-items:center;justify-content:center;padding:20px}
+.modal.open{display:flex}
+.modal-in{background:var(--bg);border-radius:24px;padding:30px;width:100%;max-width:620px;max-height:90vh;overflow:auto;position:relative}
+.modal-in h2{font-size:28px}
+.modal-x{position:absolute;top:16px;right:16px}
+.modal textarea{border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--surface);font-size:16px;min-height:110px;width:100%}
+.flip-ph{margin-top:18px;border:1.5px dashed color-mix(in srgb,var(--gold) 60%,var(--line));border-radius:18px;aspect-ratio:3/2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;text-align:center;padding:24px;background:var(--gold-soft)}
+.flip-ph span{color:var(--muted);font-size:14px;max-width:36ch}
+/* estimate */
+.est{font-size:14px;color:var(--muted)}
+.tray li .est b{color:var(--ink);display:inline;font-size:15px}
+small.warn{color:#9A5B00!important}
+.total{border-top:1px solid var(--line);padding-top:14px;display:flex;flex-direction:column;gap:4px}
+.total > div{display:flex;justify-content:space-between;align-items:baseline}
+.total span{font-weight:700}
+.total b{font-family:var(--serif);font-size:26px}
+.total small{color:var(--muted);font-size:12.5px;line-height:1.45}
+.ages{display:flex;flex-wrap:wrap;gap:12px;margin:8px 0 6px}
+.ages label{display:flex;align-items:center;gap:8px;font-size:14px}
+.ages select{border:1px solid var(--line);border-radius:10px;padding:8px 10px;background:var(--surface);font-size:15px}
+
+/* team */
+.about-kit{margin:6px 0 8px;max-width:62ch;gap:12px}
+.about-kit li{font-size:16.5px;line-height:1.6}
+.about-page .about-text{max-width:62ch}
+.about-page .team{margin:8px 0 32px}
+.about-text{margin-top:18px;max-width:56ch}
+.about-text p{color:var(--ink)!important;margin:0 0 14px!important;font-size:17px;line-height:1.7}
+#about .split{align-items:start}
+.team{display:grid;gap:18px}
+.person{display:flex;gap:22px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:22px 26px}
+.person img{width:112px;height:112px;border-radius:999px;object-fit:cover;flex-shrink:0;box-shadow:0 0 0 3px var(--surface),0 0 0 5px var(--gold)}
+.person h3{font-size:26px}
+.person .role{color:var(--gold-ink)!important;font-weight:700;font-size:13px;letter-spacing:.12em;text-transform:uppercase;margin:6px 0 0!important}
+.person .bio{color:var(--muted);font-size:15px;margin:10px 0 0!important;max-width:40ch}
+@media (max-width:520px){.person{flex-direction:column;align-items:flex-start}}
+
+/* legal + footer links */
+footer.site a{color:var(--panel-muted);text-decoration:none}
+footer.site a:hover,.flink:hover{text-decoration:underline;text-underline-offset:4px}
+.flink{background:none;border:0;padding:0;color:var(--panel-muted);font-size:15px;text-align:left;cursor:pointer;font-family:inherit}
+.legal{max-width:760px;padding:64px 0 24px}
+.legal h1{font-size:clamp(36px,4.4vw,52px)}
+.legal h2{font-size:24px;margin:36px 0 10px}
+.legal p{color:var(--ink);margin:0 0 12px;line-height:1.7}
+.legal-nav{display:flex;flex-wrap:wrap;gap:8px;margin:26px 0 8px}
+.legal-nav .flink{color:var(--ink);border:1px solid var(--line);border-radius:999px;padding:8px 16px;font-size:14px}
+.legal-nav .flink.on{border-color:var(--gold);background:var(--gold-soft)}
+
+/* destinations */
+.dest{border:0;padding:0;margin:0;min-width:0}
+.dest legend{font-size:14px;font-weight:700;margin-bottom:10px;padding:0}
+.pills{display:flex;flex-wrap:wrap;gap:10px}
+.pill{position:relative;cursor:pointer}
+.pill input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.pill span{display:inline-flex;align-items:center;min-height:44px;padding:8px 18px;border:1.5px solid var(--line);border-radius:999px;background:var(--surface);font-weight:500;font-size:15px}
+.pill input:checked + span{border-color:var(--gold);background:var(--gold-soft);font-weight:700}
+.pill input:focus-visible + span{outline:3px solid var(--gold);outline-offset:2px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+.dest input[type=text]{width:100%;border:1px solid var(--line);border-radius:12px;padding:13px 15px;background:var(--surface);font-size:16px;min-height:50px}
+.hero p.dests{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;font-size:14px;max-width:none}
+.hero p.dests span{border:1px solid color-mix(in srgb,var(--gold) 55%,var(--line));border-radius:999px;padding:4px 12px;color:var(--ink)}
+.hero p.dests span.more-d{border-style:dashed;color:var(--muted)}
+
+/* clothing rental */
+.kit{list-style:none;margin:0 0 18px;padding:0;display:grid;gap:8px}
+.kit li{display:flex;gap:10px;align-items:flex-start;font-size:16px}
+.kit li svg{margin-top:4px;color:var(--gold)}
+.rent-price{font-size:17px;color:var(--ink)!important;margin:0 0 22px!important}
+.rent-price b{font-family:var(--serif);font-size:24px;font-weight:600}
+.split .small-note{font-size:14px;margin:16px 0 0!important}
+.extras{margin-top:36px}
+.extras h2{font-size:26px;margin-bottom:6px}
+.extras > p{color:var(--muted);font-size:15px}
+
+/* tray */
+.tray{position:sticky;top:100px}
+.tray .card{padding:24px;display:flex;flex-direction:column;gap:14px}
+.tray h2{font-size:24px}
+.tray .when{display:flex;align-items:center;gap:10px;font-size:14px;background:var(--bg);border-radius:12px;padding:12px 14px}
+.tray ul{list-style:none;margin:0;padding:0}
+.tray li{padding:14px 0;border-top:1px solid var(--line);display:flex;flex-direction:column;gap:8px}
+.tray li .h{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}
+.tray li b{display:block;font-size:16px;line-height:1.3}
+.tray li small{color:var(--muted);font-size:13px}
+.tray li label{font-size:13px;color:var(--muted);display:flex;align-items:center;gap:8px}
+.tray li label.privtick input{width:16px;height:16px;margin:0;accent-color:var(--ink)}
+.tray li select{border:1px solid var(--line);border-radius:8px;padding:6px 8px;background:var(--surface);font-size:14px}
+.x{width:40px;height:40px;border-radius:999px;border:1px solid var(--line);background:var(--surface);display:flex;align-items:center;justify-content:center;cursor:pointer;flex-shrink:0}
+.empty{border:1.5px dashed var(--line);border-radius:14px;padding:22px;text-align:center;color:var(--muted);font-size:15px;line-height:1.5}
+.note{font-size:13px;color:var(--muted);line-height:1.5}
+@media (max-width:1020px){.tray.desk{display:none}}
+
+.mbar{display:none;position:fixed;left:0;right:0;bottom:0;z-index:30;background:var(--panel);color:var(--panel-ink);padding:14px 20px calc(14px + env(safe-area-inset-bottom,0px));align-items:center;justify-content:space-between;gap:12px}
+.mbar small{color:var(--panel-muted);display:block;font-size:13px}
+.mbar b{font-size:17px}
+@media (max-width:1020px){.mbar.show{display:flex}}
+.sheet{display:none;position:fixed;inset:0;z-index:40;background:rgba(5,15,22,.55);align-items:flex-end}
+.sheet.open{display:flex}
+.sheet .inner{background:var(--bg);width:100%;max-height:85vh;overflow:auto;border-radius:24px 24px 0 0;padding:20px 20px calc(24px + env(safe-area-inset-bottom,0px))}
+.sheet .tray{position:static}
+
+.sent{max-width:880px;margin:0 auto;text-align:center;padding:72px 0 40px;display:flex;flex-direction:column;align-items:center;gap:22px}
+.sent h1{font-size:clamp(34px,4.4vw,50px)}
+.sent .next{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;text-align:left;width:100%;margin-top:12px}
+.sent .next div{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:8px}
+.sent .next h3{font-size:20px}
+.sent .next p{color:var(--muted);font-size:15px}
+.sent .sum{width:100%;text-align:left}
+@media (max-width:760px){.sent .next{grid-template-columns:1fr}}
+.demo{font-size:13px;color:var(--muted);border:1px dashed var(--line);border-radius:10px;padding:8px 14px}
+
+.enter{animation:enter .35s ease both}
+@keyframes enter{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.enter{animation:none}.btn{transition:none}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="wrap">
+    <button class="logo" type="button" data-go="/" aria-label="Lapland Travel Assistant, home">
+      <svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="#C9A24A"/></svg>
+      <span><span class="w1">LAPLAND</span><span class="w2">TRAVEL ASSISTANT</span></span>
+    </button>
+    <div id="topmid"></div>
+    <div id="topright"></div>
+  </div>
+</header>
+<main id="app"><noscript><div class="wrap" style="padding:64px 32px"><h1>Lapland Travel Assistant</h1><p style="margin-top:16px">Our trip builder needs JavaScript. You can also email us at <a href="mailto:laplandtravelassistant@gmail.com">laplandtravelassistant@gmail.com</a>.</p></div></noscript></main>
+<div class="mbar" id="mbar"></div>
+<div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Your trip"><div class="inner" id="sheetInner"></div></div>
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Package"><div class="modal-in" id="modalInner"></div></div>
+<div class="flip" id="flip" role="dialog" aria-modal="true" aria-label="Package book"><div class="flip-in" id="flipInner"></div></div>
+
+<script>
+(function(){
+// ---------- launch settings ----------
+// Where requests are sent: the web app URL of our Google Apps Script (see apps-script/SETUP.md).
+// Leave empty and the forms offer to send the request by email instead.
+var FORM_ENDPOINT = 'https://script.google.com/macros/s/AKfycbxAxvFwwf8dNERAj19UIkvzjcf-uNB6JBULAzceHoOjRprb8NZp2JrQBgCoA9yWzZCz/exec';
+var SHOW_PACKAGES = false;  // ready-made packages: switch on when their content and prices are ready
+var SHOW_STANDINS = false;  // generic activities that don't have a partner product yet
+// ---------- data ----------
+// Festive season window (month-day). Adjust to the real season.
+var FESTIVE = {from:[11,15], to:[1,6]};
+// Rich activities. Periods are month-day ranges (can cross new year). Prices are PRELIMINARY – check before going live.
+var NL_WILD = {
+  id:'aurora-wilderness', name:'Northern lights wilderness tour', img:'images/aurora-wilderness.webp',
+  d:'A small-group evening out of the city to look for the aurora, with a campfire snack and photos from your guide.',
+  duration:'4 hours', ages:'5+', starts:'Between 19:00 and 22:00, every half hour', group:'Max. 8 people',
+  desc:[
+    'Your guide picks you up in the evening, gets you into warm overalls and boots, and drives your small group out of Rovaniemi, away from the city lights.',
+    'Where you go depends on the night. Your guide checks the cloud and aurora forecasts during the day and keeps an eye on them along the way, so you may stop at up to three places to find a clearer sky: frozen lakes, riversides and quiet snowy forest.',
+    'Halfway through, your guide lights a campfire the traditional way, with flint and steel. You’ll have hot drinks, grilled sausages and toasted bread while the guide watches the sky and answers your questions about life in the Arctic.',
+    'Your guide carries a professional camera and takes photos of you and the sky. You’ll get a link to download them the next day. You’re welcome to bring your own camera too.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Warm winter overalls and boots',
+    'Northern lights guide with a professional camera',
+    'Photos taken by your guide, sent the next day',
+    'Hot drinks and a campfire snack',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Tripod (available to rent or buy on the tour)'
+  ],
+  know:[
+    'The northern lights are a natural phenomenon, so we can’t promise you’ll see them, or how bright they’ll be.',
+    'The tour runs in all weather.',
+    'For ages 5 and up.',
+    'It can get as cold as −30°C. Warm outer layers are provided, but dress in warm layers underneath.',
+    'Some walking in snow. Not recommended if you have a heart condition or another serious medical condition.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[11,1], to:[3,31], adult:135, child:104, childAges:'5–14'} ]
+};
+
+var NL_SNOW = {
+  id:'aurora-snowmobile', name:'Northern lights snowmobile safari', img:'images/aurora-snowmobile.webp', home:'aurora',
+  d:'Drive a snowmobile into the forest after dark, with campfire stops and a chance of northern lights.',
+  duration:'4 hours', ages:'18+', starts:'19:00 or 20:00',
+  desc:[
+    'After pickup, you get into warm snowmobile gear and a short driving and safety briefing. Then the group heads out on forest trails, away from the city lights, with only the headlights and the moon lighting the way.',
+    'The route runs through snowy taiga forest. You stop several times along the way to take in the winter night, enjoy the views and look up for the northern lights. How far you ride depends on how the group drives.',
+    'Halfway, you take a break by the campfire, grill a snack and have a hot drink while your guide tells stories about the northern lights. After some time for photos, you ride back.',
+    'Two adults share one snowmobile. If you’d rather drive alone, you can have your own snowmobile for an extra charge.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, gloves, helmet and balaclava',
+    'Driving and safety instructions',
+    'Hot drinks and a campfire snack',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For adults only (18+).',
+    'Drivers need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile. In a group with an odd number of adults, you may share with another guest.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'Seeing the northern lights depends on the weather and some luck, so it can’t be guaranteed.',
+    'You’re outdoors for about 4 hours, so it takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:195, adultNote:'per adult, two per snowmobile', single:260} ]
+};
+
+var NL_FAM = {
+  id:'aurora-family-snowmobile', name:'Family northern lights snowmobile safari', img:'images/aurora-family-snowmobile.webp', home:'aurora',
+  d:'An evening snowmobile ride for the whole family. Adults drive, children ride in a sledge pulled by the guide.',
+  duration:'3 hours, about 1.5–2 hours outdoors', ages:'4+', starts:'19:00 or 20:00', group:'Max. 8 people',
+  desc:[
+    'An evening safari made for families. Adults drive the snowmobiles, two to a snowmobile, while the children sit comfortably in a sledge pulled by your guide.',
+    'You ride through quiet snowy forest after dark, with short stops along the way for photos and to swap drivers if you like.',
+    'Halfway, there’s a longer stop where your guide serves warm drinks. With a clear sky and some luck, the northern lights may show up overhead.',
+    'The group is small, eight people at most, so your guide has time for everyone.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, helmet and balaclava',
+    'Safety instructions',
+    'Warm drinks',
+    'Small group, max. 8 people'
+  ],
+  excl:[
+    'Snacks',
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For ages 4 and up. Children ride in the sledge pulled by the guide’s snowmobile.',
+    'Drivers must be 18+ and need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'Seeing the northern lights depends on the weather and some luck, so it can’t be guaranteed.',
+    'The 3 hours include the drive to and from the starting point. How far you ride depends on the group’s driving.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:165, adultNote:'per adult, two per snowmobile', child:95, childAges:'4–[X]'} ]
+};
+
+var NL_PRIV = {
+  id:'aurora-private', name:'Private northern lights tour', img:'images/aurora-private.webp', home:'aurora',
+  d:'Your own guide and car for the evening, a plan built around your group, and photos of you under the sky.',
+  duration:'4 hours', ages:'[X]+', starts:'Flexible, agreed with you', group:'Private, up to 8 people',
+  desc:[
+    'The same kind of evening as our small-group northern lights tour, but just for your family or friends, with a guide who plans the night around you.',
+    'You decide how it goes: stay close to town at easy-to-reach spots, drive as far as the time allows, head for a particular place, or settle at a good viewpoint by an open fire. You can visit up to three locations to look for the lights.',
+    'Your guide explains what causes the northern lights and carries a professional camera to photograph you and the sky. You’ll get the photos the next day.',
+    'If you like, your guide shows you how to light a fire the traditional way, and you’ll have hot drinks and a campfire snack while you wait for the sky.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Private guide with a professional camera',
+    'Up to 3 locations to look for the northern lights',
+    'Warm winter clothing and boots',
+    'Hot drinks and a campfire snack',
+    'Photos taken by your guide, sent the next day',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'The price is for your whole group, up to 8 people.',
+    'The northern lights are a natural phenomenon, so we can’t promise you’ll see them, or how bright they’ll be.',
+    'The tour runs in all weather, so dress warmly. Warm clothing and boots are available if you need them.',
+    'A little walking in the cold. Not recommended if you have a heart condition or another serious medical condition.',
+    'Start time is flexible. Pickup is 10–60 minutes before it, and we confirm the exact time by email.'
+  ],
+  periods:[
+    {from:[11,1], to:[3,31], group:850}
+  ]
+};
+
+var NL_SKI = {
+  id:'aurora-ski', name:'Northern lights ski trek', img:'images/aurora-ski.webp', home:'aurora',
+  d:'An evening on backcountry skis in the wilderness, far from the city lights, with a campfire break along the way.',
+  duration:'3.5 hours, about 1.5–2 hours skiing', ages:'8+', starts:'19:00 or 20:00', group:'Max. 8 people',
+  desc:[
+    'Your guide drives the group out of Rovaniemi to a spot well away from the city lights, picked to suit the group’s level and to give you a good chance of seeing the northern lights if they appear.',
+    'You explore on backcountry skis. They have skins on the bottom, so you can go up and down hills without picking up much speed, and you wear them with regular winter boots. Like snowshoeing, it takes little practice, so it works for beginners too. Your guide goes through safety and shows you how to move in fresh snow.',
+    'Halfway, your guide lights a campfire and serves hot drinks and a campfire snack, and tells you about the northern lights, life in the Arctic and the local nature.',
+    'You ski for about 90–120 minutes, depending on the group. The tour runs in all weather, so even on a night with a low aurora forecast, you still get an evening out in the wilderness.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to the skiing area',
+    'Skis and poles',
+    'Warm winter overalls and boots',
+    'Professional guide',
+    'Hot drinks and a campfire snack',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 8 and up.',
+    'The northern lights are a natural phenomenon, so we can’t promise you’ll see them, or how bright they’ll be.',
+    'The tour runs in all weather.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:125, child:105, childAges:'8–[X]'} ]
+};
+
+var SM_1H = {
+  id:'snowmobile-1h', name:'1-hour snowmobile safari', img:'images/snowmobile-1h.webp', home:'snowmobiling',
+  d:'A short first go on a snowmobile: a safety briefing, then an hour on forest trails behind your guide.',
+  duration:'2 hours, 1 hour driving', ages:'18+', starts:'08:00, 11:00, 14:00, 17:00 or 20:00',
+  desc:[
+    'A good first taste of snowmobiling, whether you’ve never driven one or have done it before.',
+    'You start with warm gear (overalls, boots, gloves, helmet and balaclava) and a guide who shows you how to drive the snowmobile safely.',
+    'Then you follow your guide out onto snowy trails for an hour of driving through the Lapland countryside, taking in the winter views as you go.',
+    'Two adults share one snowmobile. If you’d rather drive alone, you can have your own snowmobile for an extra charge.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, gloves, helmet and balaclava',
+    'Driving and safety instructions'
+  ],
+  excl:[
+    'Snacks',
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For adults only (18+).',
+    'Drivers need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:110, adultNote:'per adult, two per snowmobile', single:175} ]
+};
+
+var SM_TAIGA = {
+  id:'snowmobile-taiga', name:'Snowmobile safari in the taiga', img:'images/snowmobile-taiga.webp', home:'snowmobiling',
+  d:'A longer ride through snowy taiga forest and frozen landscapes, with a warm drink break halfway.',
+  duration:'4 hours, about 2–2.5 hours outdoors', ages:'18+', starts:'08:00 or 14:00',
+  desc:[
+    'After a driving and safety briefing, you set off behind your guide on trails through snowy taiga forest and across the frozen landscapes around Rovaniemi.',
+    'Along the way you stop several times to take in the quiet and the views. How far you ride depends on how the group drives.',
+    'Around halfway, your guide serves warm drinks and tells you about the area. After some time for photos, you ride back.',
+    'Two adults share one snowmobile. If you’d rather drive alone, you can have your own snowmobile for an extra charge.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, gloves, helmet and balaclava',
+    'Driving and safety instructions',
+    'Warm drinks'
+  ],
+  excl:[
+    'Snacks',
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For adults only (18+).',
+    'Drivers need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'The 4 hours include the drive to and from the starting point.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:175, adultNote:'per adult, two per snowmobile', single:240} ]
+};
+
+var SM_FULL = {
+  id:'snowmobile-full-day', name:'Full-day snowmobile safari', img:'images/snowmobile-full-day.webp', home:'snowmobiling',
+  d:'A long day on the snowmobile, deeper into the wilderness, with lunch by the fire in a traditional wooden kota.',
+  duration:'7 hours, about 5.5–6 hours outdoors', ages:'18+', starts:'08:00',
+  desc:[
+    'A full day for those who want plenty of time on the snowmobile. The route leaves the usual tourist trails and heads deeper into the wilds of Lapland, through taiga forest and across the frozen landscapes of the Rovaniemi area.',
+    'Your guide adjusts the route to the group’s driving and the day’s weather. There are several stops along the way to take in the quiet and the views, but the focus is on a long ride.',
+    'Midway, you stop for lunch in a traditional wooden kota, warm up by the fire and rest before the afternoon ride back.',
+    'Two adults share one snowmobile, but on a day this long we recommend your own snowmobile. It’s much more enjoyable.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, gloves, helmet and balaclava',
+    'Driving and safety instructions',
+    'Lunch and warm drinks in a traditional wooden kota'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For adults only (18+).',
+    'Drivers need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile unless you book your own.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'You’re outdoors for at least 5.5–6 hours on a long ride. The 7 hours include the drive to and from the starting point.',
+    'Takes endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[1,1], to:[3,31], adult:270, adultNote:'per adult, two per snowmobile', single:360} ]
+};
+
+var SM_FAM = {
+  id:'snowmobile-family', name:'Family snowmobile safari', img:'images/aurora-family-snowmobile.webp', home:'snowmobiling',
+  d:'A daytime snowmobile ride for the whole family. Adults drive, children ride in a sledge pulled by the guide.',
+  duration:'3 hours, about 1.5–2 hours outdoors', ages:'4+', starts:'11:00 or 14:00', group:'Max. 8 people',
+  desc:[
+    'A snowmobile outing made for families. Adults drive the snowmobiles, two to a snowmobile, while the children sit comfortably in a sledge pulled by your guide.',
+    'You ride through snowy forest, with short stops along the way for photos and to swap drivers if you like.',
+    'Halfway, there’s a longer stop where your guide serves warm drinks. It’s a good moment for photos, and for the kids to play in the snow.',
+    'The group is small, eight people at most, so your guide has time for everyone.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, helmet and balaclava',
+    'Safety instructions',
+    'Warm drinks',
+    'Small group, max. 8 people'
+  ],
+  excl:[
+    'Snacks',
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre',
+    'Driving alone on your own snowmobile (extra charge)'
+  ],
+  know:[
+    'For ages 4 and up. Children ride in the sledge pulled by the guide’s snowmobile.',
+    'Drivers must be 18+ and need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'Two adults share a snowmobile.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'The 3 hours include the drive to and from the starting point. How far you ride depends on the group’s driving.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time and starting point by email.'
+  ],
+  periods:[ {from:[1,1], to:[3,31], adult:145, adultNote:'per adult (15+), two per snowmobile', child:80, childAges:'4–14'} ]
+};
+
+var SM_PRIV = {
+  id:'snowmobile-private', name:'Private snowmobile safari', img:'images/snowmobile-private.webp', home:'snowmobiling',
+  d:'Your own snowmobile guide, a start time that suits you, and a ride through taiga forest just for your group.',
+  duration:'4 hours, about 2–2.5 hours outdoors', ages:'18+', starts:'Flexible, agreed with you', group:'Private',
+  desc:[
+    'The same kind of ride as our taiga safari, but just for your group, with your own guide.',
+    'You choose the start time: early in the morning for fresh tracks, or in the evening for a chance of seeing the northern lights as you ride.',
+    'After a driving and safety briefing, you follow your guide through snowy taiga forest and across frozen landscapes, stopping several times to take in the views. How far you ride depends on how the group drives.',
+    'Around halfway, your guide serves warm drinks and tells you about the area. After some time for photos, you ride back.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'All activities, services and equipment described',
+    'Thermal overall, boots, gloves, helmet and balaclava',
+    'Driving and safety instructions',
+    'Warm drinks'
+  ],
+  excl:[
+    'Snacks',
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For adults only (18+).',
+    'Two adults share a snowmobile. Driving alone is available on request.',
+    'Drivers need a valid driving licence (category A1, T, A or B) that is valid in Finland. Bring the physical licence with you.',
+    'The driver is liable for damage to the snowmobile, up to €1,000 per person in case of an accident.',
+    'Driving under the influence of alcohol or drugs is strictly forbidden.',
+    'The 4 hours include the drive to and from the starting point.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Start time is flexible. Pickup is 10–60 minutes before it, and we confirm the exact time and starting point by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], group:1565, groupNote:'per group, up to [X] people'} ]
+};
+
+var WA_RIISI = {
+  id:'riisitunturi', name:'Day trip to Riisitunturi National Park', img:'images/riisitunturi.webp', home:'adventures',
+  d:'A full day out to see the famous snow-crowned trees of Riisitunturi, with a guided hike and lunch by the fire.',
+  duration:'About 8 hours, back around 16:00', ages:'8+', starts:'07:30 or 08:00', group:'Max. 8 people',
+  desc:[
+    'Riisitunturi National Park lies about 150 km east of Rovaniemi and is known for its winter scenery: thick layers of snow and ice turn the spruce trees into huge, soft white shapes. A single full-grown spruce can carry up to four tonnes of snow.',
+    'Your guide picks you up in the morning and drives about two hours through the Lapland countryside to the park. Then you set off on a 4 km hike among the snow-covered trees. If there’s been a lot of fresh snow, you’ll use snowshoes.',
+    'Along the way, your guide tells you about the wildlife and nature around you. At lunchtime, they light a fire the traditional way, with flint and steel, and serve a campfire lunch and hot drinks while answering your questions about life in the Arctic.',
+    'The day includes the drive, the hike and time around the fire. You’re back in Rovaniemi around 16:00.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to and from the national park',
+    'Professional guide',
+    'Warm winter overalls and boots',
+    'Photography',
+    'Campfire snacks, lunch and hot drinks',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 8 and up.',
+    'About 2 hours’ drive each way, and a 4 km hike in snow.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:200, adultAges:'15+', child:165, childAges:'8–14'} ]
+};
+
+var WA_KOROUOMA = {
+  id:'korouoma', name:'Frozen waterfalls of Korouoma Canyon', img:'images/korouoma.webp', home:'adventures',
+  d:'A full day hiking in Korouoma Canyon to see some of Europe’s most impressive frozen waterfalls, with lunch by the fire.',
+  duration:'About 7 hours, back 16:00–17:00', ages:'8+', starts:'07:30, 08:00 or 09:00', group:'Max. 8 people',
+  desc:[
+    'Korouoma is a canyon about 110 km south-east of Rovaniemi: 30 km long and up to 130 metres deep, with cliffs, rapids and waterfalls. In winter the waterfalls freeze into huge walls of ice, popular with ice climbers from around the world.',
+    'Your guide drives you to the nature reserve for a hike of about 5 km through the quiet canyon, past some of the most impressive frozen waterfalls in Europe. Along the way, your guide tells you about the local nature, and with some luck you may spot tracks of wolves, lynx, wolverines, moose, reindeer, weasels or Arctic hares.',
+    'At lunchtime, your guide lights a fire the traditional way, with flint and steel, and serves a campfire lunch, snacks and hot drinks while answering your questions about nature and life in the Arctic.',
+    'The day includes the drive, the hike and lunch by the fire. You’re back in Rovaniemi between 16:00 and 17:00.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to and from the canyon',
+    'Professional Arctic guide',
+    'Warm winter overalls and boots',
+    'Hot drinks, campfire lunch and snacks',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 8 and up.',
+    'Includes about 5 km of walking in the nature reserve.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[11,1], to:[3,31], adult:155, adultAges:'15+', child:115, childAges:'8–14'} ]
+};
+
+var WA_FAMFALLS = {
+  id:'family-waterfalls', name:'Family frozen waterfalls day trip', img:'images/korouoma.webp', home:'adventures',
+  d:'A gentler day out for families: a short hike in Korouoma Canyon, the Auttiköngäs waterfall and a BBQ lunch by the fire.',
+  duration:'About 6 hours', ages:'4+', starts:'09:00', group:'Max. 8 people',
+  desc:[
+    'A shorter, more relaxed version of our Korouoma day trip, made with families and slower walkers in mind. It combines two beautiful nature spots in one day.',
+    'First, a scenic drive to Korouoma Canyon, a 30 km canyon known for its tall cliffs and frozen waterfalls. Your guide leads a short, family-friendly hike through the reserve, with chances to spot local wildlife along the way.',
+    'Then a quick drive on to the Auttiköngäs nature trail, where a short walk takes you to a wooden bridge with a view of the Auttiköngäs waterfall.',
+    'Afterwards, you gather around an open fire for a BBQ lunch. Your guide shares stories about the region and shows you how to light a fire the traditional way.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport for the day',
+    'Professional Arctic guide',
+    'Warm winter overalls and boots',
+    'Hot drinks, campfire lunch and snacks',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 4 and up.',
+    'The 6 hours include the drives, the walks and lunch by the fire.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[11,1], to:[3,31], adult:140, adultAges:'15+', child:100, childAges:'4–14'} ]
+};
+
+var WA_SURVIVAL = {
+  id:'wilderness-survival', name:'Wilderness survival walk', img:'images/wilderness-survival.webp', home:'adventures',
+  d:'A guided walk in the snowy taiga to learn about the forest, animal tracks and basic survival skills, with a campfire snack.',
+  duration:'3.5 hours', ages:'4+', starts:'09:00 or 14:00',
+  desc:[
+    'Your guide takes you out of Rovaniemi and straight into the taiga forest. After a short safety briefing, you set off on foot through the snowy woods.',
+    'The route suits your group: your guide talks it through with you at pickup and you choose the level together.',
+    'Along the way, your guide tells you about the trees, plants and their uses, and helps you read the tracks in the snow. Wolf, lynx, wolverine, moose, reindeer, weasel and Arctic hare all pass through these forests. You also learn how to use what’s around you to build a fire, and other basic survival skills.',
+    'Halfway, your guide lights a campfire with flint and steel and the natural materials you’ve gathered on the way, and serves hot drinks and a campfire snack.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to the forest',
+    'Professional Arctic guide',
+    'Warm winter overalls and boots',
+    'Hot drinks and a campfire snack',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 4 and up.',
+    'It can get as cold as −30°C. Warm outer layers are provided, but dress in warm layers underneath.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[11,1], to:[3,31], adult:95, adultAges:'15+', child:75, childAges:'4–14'} ]
+};
+
+var WA_ICEFISH = {
+  id:'ice-fishing', name:'Ice fishing on a wilderness lake', img:'images/ice-fishing.webp', home:'adventures',
+  d:'Try a favourite local pastime on a quiet frozen lake north of the Arctic Circle, with a campfire snack on the shore.',
+  duration:'3.5 hours', ages:'4+', starts:'08:30 or 14:00', group:'Max. 8 people',
+  desc:[
+    'Ice fishing is something many locals still do every winter, both for food and for the peace and quiet. This trip takes you to a frozen lake about 20 km north of Rovaniemi, just over the Arctic Circle.',
+    'After pickup, you get into warm overalls and boots (it can be very cold out on the ice) and your guide drives you out of town. A short five-minute walk through the forest brings you to the lake.',
+    'Your guide shows you how to drill your own hole in the ice and the basics of ice fishing. Then it’s a matter of patience, and a good moment to enjoy the silence around you. Your guide is always close by if you need help or get cold.',
+    'Meanwhile, your guide builds a fire on the shore and serves hot drinks and a campfire snack. If you catch a fish of decent size, your guide cooks it over the fire for you. Small ones go back into the lake unharmed.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to the lake',
+    'Ice fishing gear and equipment',
+    'Professional guide',
+    'Warm winter overalls and boots',
+    'Hot drinks and a campfire snack',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 4 and up.',
+    'It can be very cold on the ice. Warm outer layers are provided, but dress in warm layers underneath.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:95, adultAges:'15+', child:75, childAges:'4–14'} ]
+};
+
+var WA_SKI = {
+  id:'ski-trek', name:'Backcountry ski trek', img:'images/ski-trek.webp', home:'adventures',
+  d:'Glide through deep snow in the taiga forest on easy backcountry skis, with a campfire break halfway.',
+  duration:'4 hours, about 60–90 minutes skiing', ages:'8+', starts:'08:30 or 14:00', group:'Max. 8 people',
+  desc:[
+    'Your guide drives the group out of Rovaniemi into the taiga forest, to a spot picked to suit the group’s level and show you some of Lapland’s best scenery, away from the usual paths.',
+    'You explore on backcountry skis. Unlike downhill or cross-country skiing, you don’t need groomed tracks or special boots. The skis have skins on the bottom, so you can go up and down hills without picking up much speed. Like snowshoeing, it takes little practice, so it works for beginners too.',
+    'Your guide goes through safety and shows you how to use the skis properly. Halfway, they light a campfire and serve hot drinks and a campfire snack, and tell you about life in the Arctic and the local nature.',
+    'You ski for about 60–90 minutes, depending on the group. The rest of the time is the drive and the break by the fire.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to the skiing area',
+    'Skis and poles',
+    'Warm winter overalls and boots',
+    'Professional guide',
+    'Hot drinks and a campfire snack',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 8 and up.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:115, adultAges:'15+', child:90, childAges:'8–14'} ]
+};
+
+var WA_SNOWSHOE = {
+  id:'snowshoe', name:'Snowshoe walk in the wilderness', img:'images/snowshoe.webp', home:'adventures',
+  d:'A relaxed walk on snowshoes through old forest and up gentle hills, looking for animal tracks, with a campfire break.',
+  duration:'3.5 hours', ages:'6+', starts:'08:30 or 14:00', group:'Max. 8 people',
+  desc:[
+    'A peaceful outing for nature lovers and anyone who wants some quiet time in the snow. Your guide takes you out of town and into the wilderness on snowshoes.',
+    'You walk through old forest and up hills, looking for wildlife and reading the tracks in the snow. Wolves, lynx, wolverines, moose, reindeer, weasels and Arctic hares all pass through here. The pace is set to suit the group, so it works for complete beginners and experienced hikers alike.',
+    'Halfway, your guide lights a fire the traditional way, with flint and steel, and serves hot drinks and a campfire snack while answering your questions about Lapland and life in the Arctic.',
+    'This walk is designed to be relaxing. If you’d like something more challenging, tell us in your trip request and we’ll arrange it.'
+  ],
+  incl:[
+    'Pickup and drop-off at your accommodation outside the city centre; city-centre guests meet at a central meeting point',
+    'Transport to the forest',
+    'Snowshoes',
+    'Warm winter overalls and boots',
+    'Professional guide',
+    'Hot drinks and a campfire snack',
+    'Small group, max. 8 people',
+    'All taxes and fees'
+  ],
+  excl:[
+    'Alcoholic drinks',
+    'Transfer surcharge if you’re staying 10 km or more from the city centre'
+  ],
+  know:[
+    'For ages 6 and up.',
+    'Takes some endurance. Not recommended if you have a heart condition or another serious medical condition.',
+    'Warm outer layers are provided, but dress in warm layers underneath.',
+    'Pickup is 10–60 minutes before the start time. We confirm your exact pickup time by email.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:95, adultAges:'15+', child:75, childAges:'6–14'} ]
+};
+
+var WA_SNOWHOTEL = {
+  id:'snowhotel-lunch', name:'Magical snow hotel visit with ice restaurant lunch', img:'images/snowhotel.webp', home:'adventures',
+  d:'Explore one of the world’s largest snow and ice hotels, then have lunch at a table made of ice.',
+  duration:'4 hours', ages:'[X]+', starts:'Pickup 11:00 (Santa Claus Village) or 11:25 (city centre)',
+  desc:[
+    'A visit to one of the largest snow and ice hotels in the world. Inside, it’s always between 0°C and −5°C, so it’s comfortable to visit even on a very cold day.',
+    'It starts with an introduction: the story of the hotel, how snow buildings are made, snow and ice art, and how the world’s only snow saunas work. Then you have free time to explore at your own pace, look into the rooms and see dozens of snow and ice sculptures. The ice bar is worth a stop for a drink served in a glass made of ice.',
+    'For lunch, you sit on an ice bench at an ice table in the ice restaurant, surrounded by sculptures. Choose one of three soups (creamy salmon soup with dill oil, smoked cheese and reindeer soup, or tomato soup with croutons), followed by blueberry pie with vanilla sauce and meringue.',
+    'Transport there and back is included, from Santa Claus Village or the city centre.'
+  ],
+  incl:[
+    'Return transport from Santa Claus Village or Rovaniemi city centre',
+    'Entrance ticket',
+    'Introduction to the snow hotel',
+    'Lunch in the ice restaurant: soup of your choice and dessert',
+    'Free time to explore the whole resort'
+  ],
+  excl:[],
+  know:[
+    'Pickup points: Santa Claus Village, next to the gingerbread cabins at the northern end of the village, at 11:00; or Rovaniemi city centre, at the Korkalonkatu 26 bus stop, at 11:25. Tell us which suits you.'
+  ],
+  periods:[ {from:[12,15], to:[1,6], adult:115, adultAges:'13+', child:70, childAges:'2–12'} ]
+};
+
+var RD_SAFARI = {
+  id:'reindeer-safari', name:'Reindeer sleigh ride in the forest', img:'images/reindeer-safari.webp', home:'reindeer',
+  d:'A calm 2.5 km sleigh ride through snowy forest at a traditional reindeer farm, with hot berry juice afterwards.',
+  duration:'2 hours at the farm, plus transport', ages:'All ages', starts:'Confirmed with your plan',
+  desc:[
+    'A visit to a traditional Lappish reindeer farm, where reindeer pull your sleigh through the snowy forest on a 2.5 km ride of about 30–40 minutes. It’s a quiet, relaxing ride, and with some luck you may spot other Arctic animals along the way.',
+    'Your guide, who speaks English and Finnish, tells you about the life of reindeer and how reindeer herding works.',
+    'After the ride, you warm up with hot berry juice and a traditional Finnish pastry, and receive your own reindeer driving licence.'
+  ],
+  incl:[
+    'Transport to the reindeer farm and back',
+    'Warm winter clothing',
+    '2.5 km reindeer sleigh ride in the forest',
+    'Guide in English and Finnish, and an introduction to reindeer herding',
+    'Reindeer driving licence',
+    'Hot berry juice and a traditional Finnish pastry'
+  ],
+  excl:[
+    'Transport from accommodation more than 10 km from the city centre (may be possible for an extra charge)'
+  ],
+  know:[
+    'The 2 hours don’t include the drive to the farm and back.',
+    'Pickup is available within 10 km of Rovaniemi city centre. Staying further out? Tell us and we’ll check.',
+    'At least two paying adults are needed per booking.',
+    'Children under 15 must be accompanied by a parent.',
+    'The ride depends on snow. If it’s cancelled for lack of snow early or late in the season, you get a full refund.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:135, adultAges:'15+', child:90, childAges:'4–14', infant:'Under 4 free'} ]
+};
+
+var RD_LONG = {
+  id:'reindeer-long', name:'Long reindeer sleigh ride in the forest', img:'images/reindeer-long.webp', home:'reindeer',
+  d:'A longer 3.5 km sleigh ride, about an hour behind the reindeer, at a traditional farm 15 km from Rovaniemi.',
+  duration:'2 hours at the farm, plus transport', ages:'All ages', starts:'Confirmed with your plan',
+  desc:[
+    'Sleigh rides behind reindeer are the traditional way of getting around in Lapland. This longer ride takes you 3.5 km through snowy forest, about 50–60 minutes in the sleigh, at a traditional reindeer farm about 15 km from the centre of Rovaniemi.',
+    'It’s a quiet, relaxing ride, and with some luck you may spot other Arctic animals along the way. Your guide, who speaks English and Finnish, tells you about the life of reindeer and how reindeer herding works.',
+    'Back at the farm, you warm up with a hot drink and a traditional Finnish pastry, and receive your own reindeer driving licence.'
+  ],
+  incl:[
+    'Transport to the reindeer farm and back',
+    'Warm winter clothing',
+    '3.5 km reindeer sleigh ride in the forest',
+    'Guide in English and Finnish, and an introduction to reindeer herding',
+    'Reindeer driving licence',
+    'Hot berry juice and a traditional Finnish pastry'
+  ],
+  excl:[
+    'Transport from accommodation more than 10 km from the city centre (may be possible for an extra charge)'
+  ],
+  know:[
+    'The 2 hours don’t include the drive to the farm and back.',
+    'Pickup is available within 10 km of Rovaniemi city centre. Staying further out? Tell us and we’ll check.',
+    'At least two paying adults are needed per booking.',
+    'Children under 15 must be accompanied by a parent.',
+    'The ride depends on snow. If it’s cancelled for lack of snow early or late in the season, you get a full refund.'
+  ],
+  periods:[ {from:[1,1], to:[3,31], adult:145, adultAges:'15+', child:100, childAges:'4–14', infant:'Under 4 free'} ]
+};
+
+var RD_NIGHT = {
+  id:'reindeer-night', name:'Reindeer night safari under the northern lights', img:'images/reindeer-night.webp', home:'reindeer',
+  d:'A quiet sleigh ride behind reindeer through the dark forest, looking for the northern lights, then hot drinks by the fire.',
+  duration:'2 hours at the farm, plus transport', ages:'All ages', starts:'Confirmed with your plan',
+  desc:[
+    'After dark, the reindeer take you on a peaceful sleigh ride of 2.5–3.5 km through the silent forest, about 40–60 minutes depending on the snow, while you watch the sky for the northern lights.',
+    'After the ride, you warm up by the fire in a cosy cottage on the farm with hot drinks and a traditional Finnish pastry. Your guide, who speaks English and Finnish, tells you about the Lappish way of life and reindeer herding.',
+    'You also receive your own reindeer driving licence to take home.'
+  ],
+  incl:[
+    'Transport to the reindeer farm and back',
+    'Warm winter clothing',
+    '2.5–3.5 km reindeer sleigh ride in the forest (depending on snow conditions)',
+    'Guide in English and Finnish, and an introduction to reindeer herding',
+    'Reindeer driving licence',
+    'Hot berry juice and a traditional Finnish pastry'
+  ],
+  excl:[
+    'Transport from accommodation more than 10 km from the city centre (may be possible for an extra charge)'
+  ],
+  know:[
+    'The northern lights are a natural phenomenon, so we can’t promise you’ll see them.',
+    'The 2 hours don’t include the drive to the farm and back.',
+    'Pickup is available within 10 km of Rovaniemi city centre. Staying further out? Tell us and we’ll check.',
+    'At least two paying adults are needed per booking.',
+    'Children under 15 must be accompanied by a parent.',
+    'The ride depends on snow. If it’s cancelled for lack of snow early or late in the season, you get a full refund.'
+  ],
+  periods:[ {from:[12,1], to:[3,31], adult:145, adultAges:'15+', child:100, childAges:'4–14', infant:'Under 4 free'} ]
+};
+
+var HU_1H = {
+  id:'husky-1h', name:'1-hour husky safari', img:'images/husky-1h.webp', home:'huskies',
+  d:'Drive your own husky team for about an hour on snowy trails, then meet the dogs over a warm drink.',
+  duration:'About 1.5 hours, 45–60 minutes on the sled', ages:'4+', starts:'09:30 or 12:30',
+  desc:[
+    'A chorus of friendly barking from the Alaskan huskies welcomes you to the husky farm. Your guide first shows you how to drive the team, so no experience is needed.',
+    'As soon as the safari starts, the dogs go quiet and get to work. You drive your own team through beautiful snowy scenery, about 7–10 km depending on the weather and the drivers, with stops along the way to enjoy the views and take photos.',
+    'Two adults share a sled and can swap drivers halfway. Children ride in the sled.',
+    'After the ride, you get to know your huskies up close and hear stories from your guide about their life and work, with a warm drink and biscuits.'
+  ],
+  incl:[
+    'Transport from Santa Claus Village or Rovaniemi city centre and back',
+    'Warm winter clothing',
+    'Visit to the husky kennel',
+    '45–60 minute husky safari (7–10 km)',
+    'Two adults per sled; children ride in the sled',
+    'Hot drink and biscuits',
+    'Stories about the huskies from your guide',
+    'Guide in English or Finnish'
+  ],
+  excl:[],
+  know:[
+    'Child price for ages 4–12 and up to 140 cm tall.',
+    'No previous experience needed. Your guide teaches you how to drive the team.',
+    'Distance depends on the weather and the drivers’ skills.',
+    'Runs December to April, depending on snow.',
+    'Pickup points: Santa Claus Holiday Village reception 30 minutes before the start, or in front of Hotel Santa Claus in the city centre 45 minutes before. We confirm the time by email.'
+  ],
+  periods:[ {from:[12,1], to:[4,30], adult:195, adultAges:'13+', child:145, childAges:'4–12'} ]
+};
+
+var HU_5K = {
+  id:'husky-5km', name:'Short husky ride (5 km)', img:'images/husky-5km.webp', home:'huskies',
+  d:'A 30-minute ride behind a team of Alaskan huskies through winter forest, then hot berry juice with the dogs.',
+  duration:'About 1 hour, 30 minutes on the sled', ages:'4+', starts:'14:00 daily',
+  desc:[
+    'A short husky ride that mixes excitement with a calm moment in the winter forest: about 30 minutes and 5 km behind a team of Alaskan huskies, depending on the weather and the group’s experience.',
+    'No experience is needed. You get instructions before you set off, so everyone can enjoy the ride safely. Two adults share a sled and can swap drivers halfway. Children ride in the sled.',
+    'Stop for a moment along the way to take in the Lapland scenery and take photos.',
+    'Afterwards, warm up indoors at the husky farm with hot berry juice and traditional biscuits, and hear stories about the huskies’ lives and adventures.'
+  ],
+  incl:[
+    'Transport from Santa Claus Village or Rovaniemi city centre and back',
+    'Warm winter clothing',
+    'Visit to the husky kennel',
+    '5 km husky safari (about 30 minutes)',
+    'Two adults per sled; children ride in the sled',
+    'Hot drink and biscuits',
+    'Stories about the huskies from your guide',
+    'Guide in English or Finnish'
+  ],
+  excl:[],
+  know:[
+    'Child price for ages 4–12 and up to 140 cm tall.',
+    'No previous experience needed. You get instructions before you set off.',
+    'Distance depends on the weather and the group’s experience.',
+    'Runs daily from December to April.',
+    'Pickup points: Santa Claus Holiday Village reception 30 minutes before the start, or in front of Hotel Santa Claus in the city centre 45 minutes before. We confirm the time by email.'
+  ],
+  periods:[ {from:[12,1], to:[4,30], adult:165, adultAges:'13+', child:130, childAges:'4–12'} ]
+};
+
+var HU_FAMDAY = {
+  id:'family-day-farm', name:'Family day at a reindeer and husky farm', img:'images/family-day-farm.webp', home:'huskies',
+  d:'A reindeer ride, a short husky ride, snow play and a salmon soup lunch. Made for families, even very young children.',
+  duration:'About 4 hours', ages:'All ages', starts:'10:30 daily',
+  desc:[
+    'A day made for the whole family, including very young children, at a cosy reindeer and husky farm.',
+    'Hop into a sleigh for a 30-minute reindeer ride, listening to the quiet of nature and your guide’s stories. The huskies are waiting too, eager to take you on a short 800 m ride. Afterwards, there’s time to take photos with the animals.',
+    'Lunch is served in the farm’s restaurant: salmon soup, followed by coffee or tea and a Finnish sweet bun. Outside, kids (and grown-ups) can play in the snow and go down the slide.',
+    'Every child gets a surprise gift at the end of the day. The order of the programme may change depending on conditions.'
+  ],
+  incl:[
+    'Transport from Santa Claus Village or Rovaniemi city centre and back',
+    'Warm winter clothing',
+    'Reindeer farm visit and a 30-minute reindeer ride',
+    'Reindeer driving licence',
+    '800 m husky ride',
+    'Stories about the reindeer and huskies',
+    'Hot drink and biscuits',
+    'Salmon soup lunch, coffee or tea and a sweet bun',
+    'Snow play',
+    'Surprise gift for each child',
+    'Guide in English and Finnish'
+  ],
+  excl:[],
+  know:[
+    'Suitable for very young children too.',
+    'Runs daily at 10:30 from 13 November to 10 January, depending on snow.',
+    'The order of the programme may change depending on conditions.',
+    'Pickup points: Santa Claus Holiday Village reception 30 minutes before the start, or in front of Hotel Santa Claus in the city centre 45 minutes before. We confirm the time by email.'
+  ],
+  periods:[ {from:[11,13], to:[1,10], adult:180, adultAges:'13+', child:140, childAges:'4–12', infant:'Under 4 €[PRICE]'} ]
+};
+
+var CATS = [
+ {id:'aurora', name:'Northern lights', d:'Evenings out of the city to look for the aurora.', cap:'northern lights over snow-covered trees', img:'images/cat-northern-lights.webp', acts:[ NL_WILD, NL_SNOW, NL_FAM, RD_NIGHT, NL_SKI, NL_PRIV ]},
+ {id:'reindeer', name:'Reindeer', d:'Farm visits, sleigh rides and time with the herd.', cap:'reindeer sleighs in a snowy forest', img:'images/cat-reindeer.webp', pos:'50% 70%', acts:[
+   RD_SAFARI,
+   RD_LONG,
+   RD_NIGHT,
+   HU_FAMDAY,
+   ['Reindeer farm visit','Meet the herd, feed the reindeer and hear how herding families live.'],
+   ['Private reindeer experience','Just your group, your own guide and a time that suits you.']]},
+ {id:'huskies', name:'Huskies', d:'From a first short ride to driving your own team.', cap:'husky team on a snowy trail at sunset', img:'images/cat-huskies.webp', pos:'50% 62%', acts:[
+   HU_5K,
+   HU_1H,
+   HU_FAMDAY,
+   ['Evening husky ride','Ride out after dark, with a chance of northern lights on clear nights.'],
+   ['Full-day husky adventure','A long day out on the trails with lunch in the wilderness.'],
+   ['Private husky safari','Your own guide and team, at a time that suits your group.']]},
+ {id:'snowmobiling', name:'Snowmobiling', d:'Guided rides over frozen rivers and forest trails.', cap:'snowmobile in deep snow', img:'images/cat-snowmobiling.webp', pos:'50% 22%', acts:[
+   SM_1H,
+   SM_TAIGA,
+   NL_SNOW,
+   NL_FAM,
+   SM_FAM,
+   SM_FULL,
+   SM_PRIV]},
+ {id:'adventures', name:'Winter adventures', d:'National parks, ice fishing, snowshoeing and more.', cap:'snow-covered trees in a national park', img:'images/cat-winter-adventures.webp', pos:'50% 75%', acts:[
+   WA_RIISI,
+   WA_KOROUOMA,
+   WA_FAMFALLS,
+   WA_SURVIVAL,
+   WA_ICEFISH,
+   WA_SKI,
+   WA_SNOWSHOE,
+   WA_SNOWHOTEL,
+   ['Ice floating','Float in a frozen lake wearing a warm rescue suit.'],
+   NL_SKI]},
+ {id:'festive', name:'Festive experiences', d:'Christmas-season experiences around Rovaniemi.', cap:'lit-up cabin in winter', festive:true, acts:[
+   ['Santa Claus Village visit','A guided visit to the Arctic Circle and Santa Claus Village.'],
+   ['Festive dinner in a Lappish hut','A warm Christmas-season dinner by the open fire.'],
+   ['Christmas sleigh ride','A festive sleigh ride through the snowy forest.'],
+   ['Private festive evening','An evening planned around your family or group.']]}
+];
+CATS.forEach(function(c){ c.acts = c.acts.filter(function(a){ return SHOW_STANDINS || !Array.isArray(a); }).map(function(a,i){
+  if(Array.isArray(a)) return {id:c.id+'-'+i, name:a[0], d:a[1], cat:c.id, catName:c.name, dest:'rovaniemi'};
+  if(!a.dest) a.dest='rovaniemi';
+  if(!a.cat && (!a.home || a.home===c.id)){ a.cat=c.id; a.catName=c.name; } return a; }); });
+var ALL = {}; CATS.forEach(function(c){ c.acts.forEach(function(a){ ALL[a.id]=a; }); });
+// Extras (not a category). Per person, by number of days. Each price = partner public rate x 1.05, rounded.
+var RENTAL = {id:'rental', name:'Winter clothing rental', cat:'extras', catName:'Extras', dest:'rovaniemi', img:'images/rental-2.webp',
+  d:'Warm winter gear waiting at your accommodation for your whole stay: snow boots, thermal jacket and trousers or an overall, and mittens. Collected after you leave.',
+  tiers:[ {days:2, price:50, label:'1–2 days'}, {days:3, price:60, label:'3 days'}, {days:4, price:70, label:'4 days'}, {days:5, price:80, label:'5 days'}, {days:7, price:90, label:'6–7 days'} ],
+  extraDay:10, periods:[ {from:[11,1], to:[4,30]} ]};
+function rentalDays(){ var a=d(S.arr), b=d(S.dep); return (a&&b)? Math.round((b-a)/864e5)+1 : 0; }
+function rentalPrice(n){ var t=RENTAL.tiers; for(var i=0;i<t.length;i++){ if(n<=t[i].days) return t[i].price; } return t[t.length-1].price+(n-t[t.length-1].days)*RENTAL.extraDay; }
+function rentalRates(){ return RENTAL.tiers.map(function(t){ return t.label+' <b class="price">€'+t.price+'</b>'; }).join(' · ')+' · Extra day <b class="price">€'+RENTAL.extraDay+'</b>'; }
+ALL[RENTAL.id]=RENTAL;
+
+// Destinations. Activities default to Rovaniemi unless they set dest.
+// Launch: Rovaniemi only. Add Levi, Ruka-Kuusamo, Saariselkä, Inari here when their activities are ready.
+var DESTS = [
+ {id:'rovaniemi', name:'Rovaniemi'}
+];
+function destName(id){ var x=DESTS.filter(function(d){return d.id===id;})[0]; return x?x.name:''; }
+
+// Legal pages (DRAFT – review before launch)
+var LEGAL = {"terms": {"title": "Booking terms", "sections": [["Who we are", ["Lapland Travel Assistant is operated by Lapland Travel Assistant Oy, Business ID 3461722-8, Rovaniemi, Finland. You can reach us at laplandtravelassistant@gmail.com or +358 45 248 9250.", "We plan and book activities in and around Rovaniemi. The activities themselves are run by carefully chosen local partner companies, and we book them on our partners’ behalf. Your plan names the partner company that runs each activity, before you pay."]], ["How booking works", ["1. You send us a trip request through our website, by email or by phone. A request is free and doesn’t commit you to anything.", "2. We check availability with our partners and send you a plan with times, prices, the partner company for each activity and its cancellation terms.", "3. If you’re happy with the plan, you confirm it and we send you a payment link for the full amount.", "4. Your booking is confirmed once we’ve received your payment. You then get a confirmation with all the details you need."]], ["Prices and payment", ["All prices are in euros and include all taxes.", "Prices shown on our website are per person unless stated otherwise (for example, private tours are priced per group). Prices include our service fee for planning and booking. The price in your plan is the one that applies.", "The full price is paid in advance through the payment link. If payment isn’t received by the deadline stated in your payment link, we may release the reserved places."]], ["Changes", ["If you’d like to change a confirmed booking, email us as soon as possible. We’ll do our best, but changes depend on availability and aren’t guaranteed. A change may affect the price."]], ["Cancellations", ["Cancellation terms depend on the activity and are stated in your plan before you pay. If our partner cancels an activity, you get a full refund. See our cancellation policy for details."]], ["Weather, safety and conditions", ["Activities in Lapland depend on nature. Our partners may change the route, shorten or cancel an activity because of weather, snow conditions or safety. In that case, see our cancellation policy.", "The northern lights are a natural phenomenon and can’t be guaranteed. Not seeing them is not a reason for a refund.", "Each activity has its own requirements, such as minimum age or a valid driving licence for snowmobiles. These are listed on our website and in your plan. It’s your responsibility to meet them. If you don’t, the partner may refuse participation and no refund is given."]], ["Your responsibilities", ["Give us accurate information about your group, including children’s ages and anything that affects your participation, such as mobility or health matters.", "Be at the pickup point or meeting point on time. If you miss the start, the activity can’t wait and no refund is given.", "Follow the guide’s instructions at all times. The guide may exclude anyone who puts themselves or others at risk, for example under the influence of alcohol."]], ["Liability", ["We act as a booking agent. The activities are run by our partner companies, which are responsible for carrying them out safely and as described. We are responsible for booking the activities listed in your confirmation correctly. We are not liable for delays, cancellations or losses caused by weather, natural conditions or other events outside our control, or for indirect losses. Our liability is limited to the price paid for the activity concerned. This limit doesn’t apply to death or personal injury, or to damage caused intentionally or through gross negligence. Nothing in these terms limits your rights under Finnish consumer law.", "We recommend having travel insurance that covers your activities."]], ["Complaints", ["If something goes wrong, tell the guide on the spot and contact us at laplandtravelassistant@gmail.com as soon as possible.", "Finnish law applies to these terms. If we can’t agree, consumers can contact the Finnish Consumer Advisory Services and bring the matter to the Consumer Disputes Board (Kuluttajariitalautakunta)."]]]}, "cancellation": {"title": "Cancellation policy", "sections": [["Cancelling your booking", ["Cancellation terms depend on the activity and follow our partner’s own terms. They are stated for each activity in your plan, before you pay. Some activities are non-refundable once paid; others can be cancelled free of charge up to a set time before the start. If no terms are stated for an activity, it is non-refundable once paid.", "Because the activities are booked for a specific date, the 14-day right of withdrawal doesn’t apply."]], ["If an activity is cancelled by us or our partner", ["If our partner cancels an activity, for example because of weather, lack of snow, safety or too few participants, you get a full refund for that activity. If you prefer, we can try to find you another time or a similar activity instead."]], ["Things that don’t lead to a refund", ["Not seeing the northern lights.", "Missing the pickup or start time.", "Not meeting an activity’s requirements, such as age or driving licence.", "Changes to the route or length of an activity made by the guide for safety or weather reasons."]], ["How to cancel", ["Email us at laplandtravelassistant@gmail.com. Even if no refund applies, please let us know so the partner can offer your place to someone else."]]]}, "privacy": {"title": "Privacy policy", "sections": [["Controller", ["Lapland Travel Assistant Oy, Business ID 3461722-8, Rovaniemi, Finland. Contact: laplandtravelassistant@gmail.com, +358 45 248 9250."]], ["What we collect", ["When you send a trip request or book with us, we collect: your name, email address and phone number; your travel dates, where you’re staying and the number of adults and children; children’s ages; the activities you’re interested in; and anything you choose to tell us in your message, such as dietary needs or mobility.", "Please only share health-related details if they’re needed to plan your activities safely."]], ["Why we use it", ["To plan your trip, check availability, send you your plan and confirmation, take payment and look after your booking. The legal basis is taking steps at your request before a contract, and carrying out that contract.", "We don’t use your details for marketing unless you’ve agreed to it."]], ["Who we share it with", ["Our partner companies that run your activities receive the details they need to deliver them, such as names, group size, children’s ages and pickup location.", "We also use trusted service providers for email, file storage, our website and payments. They only process data on our behalf. Some of them may process data outside the EU, in which case they use approved safeguards such as the EU standard contractual clauses."]], ["How long we keep it", ["We keep trip requests that don’t lead to a booking for 12 months. Booking and payment records are kept for as long as Finnish accounting law requires."]], ["Your rights", ["You can ask to see the data we hold about you, have it corrected or deleted, restrict or object to its use, or receive a copy of it. Email us at laplandtravelassistant@gmail.com.", "You also have the right to lodge a complaint with the Finnish Data Protection Ombudsman (tietosuoja.fi)."]]]}, "cookies": {"title": "Cookies", "sections": [["What we use", ["Our website doesn’t use advertising or tracking cookies.", "The trip builder saves your selections (dates, group size and chosen activities) in your own browser’s local storage, so they’re still there if you reload the page. This stays on your device and isn’t sent to us until you send your trip request. You can clear it anytime by clearing your browser’s site data."]], ["Changes", ["If we add analytics or other cookies in the future, we’ll update this page and ask for your consent where required."]]]}};
+var CONTACT = {email:'laplandtravelassistant@gmail.com', phone:'+358 45 248 9250', tel:'+358452489250'};
+// All forms go to CONTACT.email
+
+// Ready-made packages (content and prices to come; shown for Rovaniemi)
+var PACKAGES = [
+ {id:'pkg-essentials', tier:'Essentials', name:'Lapland Essentials', d:'The must-do experiences of a first winter in Lapland, simply arranged.', dest:'rovaniemi'},
+ {id:'pkg-classic', tier:'Classic', name:'Classic Lapland', d:'Lapland’s highlights at a relaxed pace, with room to breathe between activities.', dest:'rovaniemi'},
+ {id:'pkg-signature', tier:'Signature', name:'Signature Lapland', d:'Our favourite experiences, with more time, smaller groups and extra comfort.', dest:'rovaniemi'}
+];
+if(!SHOW_PACKAGES) PACKAGES=[];
+PACKAGES.forEach(function(k){ k.cat='packages'; k.catName='Package'; });
+PACKAGES.forEach(function(k){ ALL[k.id]=k; });
+// Oldest age that still counts as a child anywhere on the site (from the activity data)
+var MAXCHILD = Object.keys(ALL).reduce(function(m,k){ var a=ALL[k]; (a.periods||[]).forEach(function(q){ var r=(q.childAges||'').match(/(\d+)\D+(\d+)/); if(r) m=Math.max(m,+r[2]); }); return m; },0) || 14;
+
+// ---------- state ----------
+var S = {dest:'', destOther:'', arr:'', dep:'', adults:2, kids:[], infants:0, hotel:'', items:[], pref:{}, priv:{}, pkgNote:{}, form:{}, wish:{text:'', interests:[], recommend:false}};
+try { var saved = localStorage.getItem('lta-trip'); if(saved){ var o=JSON.parse(saved); if(o && typeof o==='object'){ for(var k in o){ S[k]=o[k]; } } } } catch(e){}
+if(!Array.isArray(S.kids)) S.kids=[]; if(typeof S.infants!=='number') S.infants=0; if(!S.pkgNote) S.pkgNote={}; if(!S.priv||typeof S.priv!=='object') S.priv={};
+if(S.children && !S.kids.length){ for(var ci=0;ci<S.children;ci++) S.kids.push(''); } delete S.children;
+// Rovaniemi only for now; drop anything saved from an older version that no longer exists
+S.dest='rovaniemi'; S.destOther=''; if(!Array.isArray(S.items)) S.items=[]; S.items=S.items.filter(function(id){ return ALL[id]; }); if(!S.pref) S.pref={};
+function save(){ try{ localStorage.setItem('lta-trip', JSON.stringify(S)); }catch(e){} }
+
+// ---------- helpers ----------
+var app = document.getElementById('app');
+function $(s,r){ return (r||document).querySelector(s); }
+function esc(t){ return String(t).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];}); }
+function ico(n,s,c){
+  var P={pin:'<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',hand:'<path d="M12 21c-4 0-7-3-7-7V9a1.5 1.5 0 0 1 3 0v3M8 12V5.5a1.5 1.5 0 0 1 3 0V11M11 11V4.5a1.5 1.5 0 0 1 3 0V11M14 11V6.5a1.5 1.5 0 0 1 3 0V14c0 4-2 7-5 7"/>',chat:'<path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/>',check:'<path d="m5 12 5 5 9-10"/>',plus:'<path d="M12 5v14M5 12h14"/>',x:'<path d="M6 6l12 12M18 6 6 18"/>',cal:'<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 10h17M8 3v4M16 3v4"/>',clock:'<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',users:'<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.8-3.5 3.4-5.5 6.5-5.5s5.7 2 6.5 5.5"/>',left:'<path d="M19 12H5M11 6l-6 6 6 6"/>',right:'<path d="M5 12h14M13 6l6 6-6 6"/>'};
+  return '<svg width="'+(s||20)+'" height="'+(s||20)+'" viewBox="0 0 24 24" fill="none" stroke="'+(c||'currentColor')+'" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" style="flex-shrink:0">'+P[n]+'</svg>';
+}
+var MTN='<svg width="46" height="30" viewBox="0 0 200 110" aria-hidden="true"><path d="M100 0 Q100 18 118 18 Q100 18 100 36 Q100 18 82 18 Q100 18 100 0Z" fill="currentColor"/><polyline points="38,100 72,56 102,86 126,70 162,100" fill="none" stroke="currentColor" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/></svg>';
+function pic(img,cap,h,extra,pos){ if(!img) return ph(cap,h,extra); return '<div class="ph photo" style="'+(h?'height:'+h+'px;':'')+(extra||'')+'"><img src="'+img+'" alt="'+esc(cap)+'" loading="lazy"'+(pos?' style="object-position:'+pos+'"':'')+'></div>'; }
+function ph(cap,h,extra){ return '<div class="ph" style="'+(h?'height:'+h+'px;':'')+(extra||'')+'">'+MTN+'<span>Photo: '+esc(cap)+'</span></div>'; }
+function d(s){ if(!s) return null; var p=s.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+function fmt(x,opt){ return x.toLocaleDateString('en-GB',opt||{day:'numeric',month:'short'}); }
+function range(){ var a=d(S.arr), b=d(S.dep); return (a&&b)? fmt(a)+' – '+fmt(b,{day:'numeric',month:'short',year:'numeric'}) : 'Dates not set'; }
+function guests(){ var k=S.kids.length, n=S.infants;
+  return S.adults+' adult'+(S.adults==1?'':'s')+(k? ', '+k+' child'+(k==1?'':'ren')+(S.kids.every(function(x){return x!=='';})?' ('+S.kids.join(', ')+')':''):'')+(n? ', '+n+' infant'+(n==1?'':'s'):''); }
+function days(){ var a=d(S.arr), b=d(S.dep), out=[]; if(!a||!b) return out; for(var t=new Date(a); t<=b && out.length<31; t.setDate(t.getDate()+1)){ out.push(new Date(t)); } return out; }
+function festiveOn(){
+  return days().some(function(x){ var m=x.getMonth()+1, dd=x.getDate();
+    var afterStart = (m>FESTIVE.from[0]) || (m===FESTIVE.from[0] && dd>=FESTIVE.from[1]);
+    var beforeEnd = (m<FESTIVE.to[0]) || (m===FESTIVE.to[0] && dd<=FESTIVE.to[1]);
+    return afterStart || beforeEnd; });
+}
+function inMD(x,from,to){ var m=x.getMonth()+1, dd=x.getDate(), v=m*100+dd, f=from[0]*100+from[1], t=to[0]*100+to[1];
+  return f<=t ? (v>=f && v<=t) : (v>=f || v<=t); }
+function periodsFor(a){ if(!a.periods) return null; return a.periods.filter(function(p){ return days().some(function(x){ return inMD(x,p.from,p.to); }); }); }
+function avail(a){ if((a.dest||'rovaniemi')!==S.dest) return false; var p=periodsFor(a); return p===null || p.length>0; }
+function place(){ return S.dest==='other' ? (S.destOther||'Somewhere else') : destName(S.dest); }
+function wishMode(){ if(!S.dest || S.dest==='other') return true; return !Object.keys(ALL).some(function(k){ return ALL[k].dest===S.dest && ALL[k].cat!=='extras'; }); }
+function wishOK(){ var w=S.wish||{}; return !!((w.text&&w.text.trim()) || (w.interests&&w.interests.length) || w.recommend); }
+function tripLine(){ return (S.dest? esc(place())+' · ':'')+range()+' · '+guests(); }
+function acts(c){ return c.acts.filter(avail); }
+function priceHTML(a){
+  var p=periodsFor(a); if(p===null) return 'Price in your plan';
+  if(p[0] && p[0].group){ var g=Math.min.apply(null,p.map(function(x){return x.group;})); var same=p.every(function(x){return x.group===g;});
+    return (same?'':'From ')+'<b class="price">€'+g.toLocaleString('en-GB')+'</b> '+(p[0].groupNote?(known(p[0].groupNote)?p[0].groupNote:'per group'):'per group, up to 8 people'); }
+  if(p.length===1){ var q=p[0];
+    if(q.adultNote) return '<b class="price">€'+q.adult+'</b> '+q.adultNote+(q.child?' · Children '+(known(q.childAges)?q.childAges+' ':'')+'<b class="price">€'+q.child+'</b>':'')+(q.single?' · Own snowmobile <b class="price">€'+q.single+'</b>':'');
+    return 'Adults'+(q.adultAges?' '+q.adultAges:'')+' <b class="price">€'+q.adult+'</b>'+(q.child?' · Children '+(known(q.childAges)?q.childAges+' ':'')+'<b class="price">€'+q.child+'</b>':'')+(known(q.infant)?' · '+q.infant:''); }
+  return 'From <b class="price">€'+Math.min.apply(null,p.map(function(x){return x.adult;}))+'</b> per adult';
+}
+// Facts still marked [like this] in the data are hidden on the page instead of shown
+function known(s){ return s!=null && s!=='' && String(s).indexOf('[')<0; }
+function ageRange(str){ var r=(str||'').match(/(\d+)\D+(\d+)/); return r?[+r[1],+r[2]]:null; }
+function minAge(a){ var r=(a.ages||'').match(/(\d+)\+/); return r?+r[1]:0; }
+function periodFor(a,id){
+  var p=periodsFor(a); if(!p||!p.length) return null;
+  var pd=S.pref[id]? d(S.pref[id]) : null;
+  if(pd){ var hit=p.filter(function(q){ return inMD(pd,q.from,q.to); })[0]; if(hit) return hit; }
+  return p[0];
+}
+// Returns {amount:number|null, note:string, warn:[]}
+function estimate(id){
+  var a=ALL[id], out={amount:null, note:'', warn:[]};
+  if(!a) return out;
+  if(a.cat==='extras'){ var n=rentalDays(), ppl=S.adults+S.kids.length;
+    if(!n){ out.note='From €'+a.tiers[0].price+' per person'; return out; }
+    out.amount=rentalPrice(n)*ppl; out.note=n+' days';
+    if(S.infants) out.warn.push('Infant sizes confirmed in your plan');
+    return out; }
+  if(a.cat==='packages'){ out.note='Priced in your plan'; return out; }
+  if(S.priv[id] && canPrivate(a)){ out.note='Private rate in your plan'; return out; }
+  var q=periodFor(a,id); if(!q){ out.note='Price on request'; return out; }
+  var mn=minAge(a), cr=ageRange(q.childAges), people=S.adults+S.kids.length+S.infants;
+  if(q.group){ var groups=Math.ceil(people/8)||1; out.amount=q.group*groups; if(groups>1) out.warn.push('Priced as '+groups+' groups of up to 8'); }
+  else {
+    var sum=S.adults*q.adult;
+    S.kids.forEach(function(age){
+      age=+age;
+      if(!age && age!==0){ age=cr?cr[0]:mn; }
+      if(mn && age<mn){ out.warn.push('Not suitable for a child aged '+age+' (ages '+a.ages+')'); return; }
+      if(cr && q.child && age>=cr[0] && age<=cr[1]) sum+=q.child; else sum+=q.adult;
+      if(!cr && q.child && out.warn.indexOf('Child prices confirmed in your plan')<0) out.warn.push('Child prices confirmed in your plan');
+    });
+    if(S.infants){
+      if(mn>3) out.warn.push('Not suitable for infants (ages '+a.ages+')');
+      else if(q.infant && /free/i.test(q.infant)) {}
+      else { out.warn.push('Infant price to be confirmed'); }
+    }
+    out.amount=sum;
+    if(q.adultNote && S.adults%2===1) out.warn.push('Odd number of adults: one may share with another guest or drive alone');
+  }
+  return out;
+}
+// Local date as YYYY-MM-DD (toISOString would shift the day in Finnish time)
+function isoLocal(t){ return t.getFullYear()+'-'+('0'+(t.getMonth()+1)).slice(-2)+'-'+('0'+t.getDate()).slice(-2); }
+function todayISO(){ return isoLocal(new Date()); }
+function money(n){ return '€'+Math.round(n).toLocaleString('en-GB'); }
+function totalEstimate(){ var t=0, open=0; S.items.forEach(function(id){ var e=estimate(id); if(e.amount===null) open++; else t+=e.amount; }); return {t:t, open:open}; }
+function cats(){ return CATS.filter(function(c){ return (!c.festive || festiveOn()) && acts(c).length; }); }
+// Activities that can be asked for as private (not extras, packages or ones that are already private)
+function canPrivate(a){ return a && a.cat!=='extras' && a.cat!=='packages' && !/^private/i.test(a.group||''); }
+function isPriv(id){ return !!S.priv[id] && canPrivate(ALL[id]); }
+function has(id){ return S.items.indexOf(id)>-1; }
+function go(p){ location.hash = '#'+p; }
+
+// ---------- sending requests ----------
+// Hidden field that people never see; bots fill it in and get silently dropped.
+function HP(kind){ return '<div class="hp" aria-hidden="true"><label>Leave this field empty <input type="text" id="hp-'+kind+'" name="website" tabindex="-1" autocomplete="off"></label></div>'; }
+function longDate(s){ var x=d(s); return x? fmt(x,{weekday:'short',day:'numeric',month:'short',year:'numeric'}) : '–'; }
+// Reference in the same format as our guest folders: "Tim Smith, 20-24.12, 2+2 (5,8)"
+function refName(name,arr,dep,adults,ages){
+  var a=d(arr), b=d(dep), p=function(n){ return ('0'+n).slice(-2); }, dates='';
+  if(a&&b) dates = (a.getMonth()===b.getMonth() && a.getFullYear()===b.getFullYear()) ? p(a.getDate())+'-'+p(b.getDate())+'.'+p(b.getMonth()+1) : p(a.getDate())+'.'+p(a.getMonth()+1)+'-'+p(b.getDate())+'.'+p(b.getMonth()+1);
+  return [name.trim(), dates, adults+'+'+ages.length+(ages.length?' ('+ages.join(',')+')':'')].filter(Boolean).join(', ');
+}
+function tripRequest(f){
+  var ages=S.kids.slice(); for(var i=0;i<S.infants;i++) ages.push('infant');
+  var name=(f.fn+' '+(f.ln||'')).trim(), wm=wishMode(), tot=totalEstimate();
+  var items=wm?[]:S.items.map(function(id){ var a=ALL[id], e=estimate(id);
+    return {id:id, name:a.name, category:a.catName, preferredDay:a.cat==='extras'?'Whole stay':S.pref[id]?longDate(S.pref[id]):'Any day', private:isPriv(id), estimate:e.amount!==null?money(e.amount):e.note, notes:e.warn.concat(S.pkgNote[id]?['Guest note: '+S.pkgNote[id]]:[]).join('; ')}; });
+  var data={ref:refName(name,S.arr,S.dep,S.adults,ages), destination:place(), firstName:f.fn, lastName:f.ln, email:f.em, phone:f.phn,
+    arrival:S.arr, departure:S.dep, adults:S.adults, childAges:S.kids.join(', '), infants:S.infants, staying:S.hotel,
+    activities:items, estimatedTotal:wm?'':money(tot.t)+(tot.open?' + '+tot.open+' item(s) priced in the plan':''), wishes:wm?S.wish:null, message:f.note};
+  var L=['TRIP REQUEST FROM THE WEBSITE','',
+    'Name: '+name, 'Email: '+f.em, 'Phone / WhatsApp: '+(f.phn||'–'), '',
+    'Destination: '+place(), 'Dates: '+longDate(S.arr)+' – '+longDate(S.dep), 'Group: '+guests(), 'Staying at: '+(S.hotel||'–'), ''];
+  if(wm){ var w=S.wish||{}; L.push('Interested in: '+((w.interests||[]).join(', ')||'–'), 'In mind: '+(w.text||'–'), 'Wants recommendations: '+(w.recommend?'Yes':'No')); }
+  else { L.push('ACTIVITIES ('+items.length+')'); items.forEach(function(x){ L.push('- '+x.name+' ('+x.category+')'+(x.private?' – PRIVATE REQUESTED':''), '  Preferred day: '+x.preferredDay+' · Est. '+x.estimate+(x.notes?'\n  '+x.notes:'')); }); L.push('', 'Estimated total: '+data.estimatedTotal); }
+  L.push('', 'Message:', f.note||'–');
+  return {subject:'Trip request: '+data.ref, data:data, text:L.join('\n')};
+}
+function sendRequest(kind, data, text, subject, btn, er, done){
+  var hp=document.getElementById('hp-'+kind);
+  if(hp && hp.value){ done(); return; }
+  var to = CONTACT.email;
+  var mail='mailto:'+to+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(text.length>1800?text.slice(0,1800)+'\n…':text);
+  var label=btn?btn.textContent:'';
+  function fail(){ if(btn){ btn.classList.remove('busy'); btn.disabled=false; btn.textContent=label; }
+    er.innerHTML='Sorry, your request didn’t go through. Please try again, or <a href="'+esc(mail)+'">send it to us by email</a> instead.'; }
+  if(!FORM_ENDPOINT){ fail(); return; }
+  if(btn){ btn.classList.add('busy'); btn.disabled=true; btn.textContent='Sending…'; }
+  er.textContent='';
+  var ctl=window.AbortController?new AbortController():null, timer=setTimeout(function(){ if(ctl) ctl.abort(); },25000);
+  // Sent as plain text so the browser doesn't need a CORS preflight (Apps Script can't answer one)
+  fetch(FORM_ENDPOINT,{method:'POST', body:JSON.stringify({kind:kind, subject:subject, text:text, data:data, replyTo:data.email, page:location.href}), signal:ctl?ctl.signal:undefined})
+    .then(function(r){ return r.json(); })
+    .then(function(j){ clearTimeout(timer); if(j && j.ok){ done(); } else fail(); })
+    .catch(function(){ clearTimeout(timer); fail(); });
+}
+
+// ---------- header parts ----------
+function stepsHTML(cur){
+  var n=['Your trip','Activities','Your details'], h='';
+  n.forEach(function(t,i){ h+='<div class="s '+(i<cur?'done':i===cur?'on':'')+'"><span class="dot">'+(i<cur?ico('check',13):(i+1))+'</span><span class="t">'+t+'</span></div>'+(i<2?'<div class="bar '+(i<cur?'done':'')+'"></div>':''); });
+  return '<nav class="steps" aria-label="Progress">'+h+'</nav>';
+}
+function setTop(mode,cur){
+  var mid=$('#topmid'), right=$('#topright');
+  document.body.classList.toggle('in-builder', mode==='builder');
+  if(mode==='site'){
+    mid.innerHTML='<nav class="nav" aria-label="Main">'+(SHOW_PACKAGES?'<button type="button" data-go="/packages">Packages</button>':'')+'<button type="button" data-scroll="what">What you can do</button><button type="button" data-scroll="how">How it works</button><button type="button" data-scroll="clothing">Clothing rental</button><button type="button" data-go="/about">About us</button><button type="button" data-scroll="contact">Contact</button></nav>';
+    right.innerHTML='<a class="btn small gold" href="#/plan">Plan my trip</a>';
+  } else if(mode==='builder'){
+    mid.innerHTML=stepsHTML(cur); right.innerHTML='<button class="link" type="button" data-go="/"><span class="lg-only">Back to site</span><span class="sm-only">Home</span></button>';
+  } else { mid.innerHTML=''; right.innerHTML=''; }
+}
+
+// ---------- views ----------
+function footerHTML(){
+  return '<footer class="site" id="contact"><div class="wrap"><div class="col"><b style="font-family:var(--logo);letter-spacing:.1em;font-size:20px">LAPLAND</b><span style="font-family:var(--logo);letter-spacing:.34em;font-size:9px">TRAVEL ASSISTANT</span><span style="margin-top:14px">Rovaniemi, Finland</span></div>'+
+   '<div class="col"><b>Contact</b><a href="mailto:'+CONTACT.email+'">'+CONTACT.email+'</a><a href="tel:'+CONTACT.tel+'">'+CONTACT.phone+'</a><button type="button" class="flink" data-go="/ask" style="margin-top:10px">Ask a question</button></div>'+
+   '<div class="col"><b>Good to know</b><button type="button" class="flink" data-go="/terms">Booking terms</button><button type="button" class="flink" data-go="/cancellation">Cancellation policy</button><button type="button" class="flink" data-go="/privacy">Privacy policy</button><button type="button" class="flink" data-go="/cookies">Cookies</button></div></div></footer>';
+}
+function viewAbout(){
+  setTop('site');
+  app.innerHTML='<div class="wrap enter"><article class="legal about-page"><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'About us</span><h1>Who we are</h1>'+
+   '<div class="about-text"><p>We’re local travel designers and guides with broad experience in Lapland tourism.</p><p>For many people, Lapland is a once-in-a-lifetime trip, and it should feel like one. Planning it yourself is harder than it looks: two activities booked for the same evening, a provider that doesn’t live up to the photos, a day that’s too full or too empty. Having someone plan it all for you has usually been seen as a luxury, so most people end up doing it alone.</p><p>We started Lapland Travel Assistant to change that. We handpick the experiences and the companies behind them. You tell us what kind of trip you’d like, and we tailor the schedule: what to do, with whom, in what order and at what time, so everything runs smoothly. All without pushing the price sky-high.</p><p>Tourism in Lapland is growing fast, and that comes with responsibility. We look for partners who keep groups small, treat their animals well and respect the nature they work in, so the Lapland you experience today is still here for the guests who come after you.</p></div>'+
+   '<h2>What you can expect</h2>'+
+   '<ul class="kit about-kit"><li>'+ico('check',18)+'<span><b>Handpicked partners.</b> We work with local companies we know and trust, and we only recommend what we’d book ourselves.</span></li>'+
+   '<li>'+ico('check',18)+'<span><b>A schedule that fits.</b> No clashing times, no rushing between activities, and the right things on the right days.</span></li>'+
+   '<li>'+ico('check',18)+'<span><b>One contact for everything.</b> You deal with us from the first question to the last booking.</span></li></ul>'+
+   '<h2>The team</h2>'+
+   '<div class="team">'+
+       '<article class="person"><img src="images/team-saku.webp" alt="Saku, Chief Experience Officer" loading="lazy" width="112" height="112"><div><h3>Saku</h3><p class="role">Chief Experience Officer</p><p class="bio">A year in Lapland travel and a Master-rank League of Legends player. At home he leads a team of his own: a wife, three kids and three dogs, so no family trip is too complicated for him.</p></div></article>'+
+     '</div>'+
+   '<div class="row-actions" style="justify-content:flex-start"><a class="btn" href="#/plan">Start building your trip</a><a class="btn ghost" href="mailto:'+CONTACT.email+'">Email us</a></div>'+
+  '</article></div>'+footerHTML();
+  hideTray();
+}
+function viewAsk(sent){
+  setTop('site'); var A=S.ask||{};
+  app.innerHTML='<div class="wrap builder enter" style="max-width:720px">'+
+   '<div class="b-title"><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Ask a question</span><h1>'+(sent?'Thanks, we’ll be in touch.':'Ask us anything')+'</h1><p>'+(sent?'We’ll reply to '+esc(A.em||'your email')+' within 24 hours.':'Not ready to plan yet? Ask us anything about Lapland, our activities or how we work. We reply within 24 hours.')+'</p></div>'+
+   (sent?'<div class="row-actions" style="justify-content:flex-start"><a class="btn" href="#/plan">Start building your trip</a><a class="btn ghost" href="#/">Back to the homepage</a></div>':
+   '<form class="card" id="fa" style="margin-top:28px" novalidate><div class="fields">'+HP('question')+
+    '<div class="field"><label for="afn">Name</label><input id="afn" autocomplete="name" value="'+esc(A.fn||'')+'"></div>'+
+    '<div class="field"><label for="aem">Email</label><input id="aem" type="email" autocomplete="email" value="'+esc(A.em||'')+'"></div>'+
+    '<div class="field full"><label for="aq">Your question</label><textarea id="aq">'+esc(A.q||'')+'</textarea></div>'+
+    '<label class="check full"><input type="checkbox" id="agdpr"><span>I agree that my details are used to answer my question, as described in our <a href="#/privacy" target="_blank" rel="noopener">privacy policy</a></span></label>'+
+   '</div><p class="err" id="ea" role="alert"></p><div class="row-actions"><span class="note">Or email <a href="mailto:'+CONTACT.email+'">'+CONTACT.email+'</a></span><button class="btn" type="submit">Send my question</button></div></form>')+
+   '</div>'+footerHTML();
+  hideTray();
+  var f=$('#fa'); if(f) f.addEventListener('submit',function(e){
+    e.preventDefault(); var er=$('#ea'); var v={fn:$('#afn').value.trim(), em:$('#aem').value.trim(), q:$('#aq').value.trim()}; S.ask=v; save();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.em)){ er.textContent='Add an email address we can reply to.'; return; }
+    if(!v.q){ er.textContent='Write your question.'; return; }
+    if(!$('#agdpr').checked){ er.textContent='Tick the box so we can use your details to reply.'; return; }
+    var subject='Question from '+(v.fn||v.em), text='QUESTION FROM THE WEBSITE\n\nName: '+(v.fn||'–')+'\nEmail: '+v.em+'\n\n'+v.q+'\n';
+    sendRequest('question', {name:v.fn, email:v.em, question:v.q}, text, subject, e.submitter||$('#fa button[type=submit]'), er, function(){ go('/ask/sent'); });
+  });
+}
+function viewLegal(k){
+  var L=LEGAL[k]; if(!L){ viewHome(); return; }
+  setTop('site');
+  var body=L.sections.map(function(sec){ return '<h2>'+esc(sec[0])+'</h2>'+sec[1].map(function(t){ return '<p>'+esc(t)+'</p>'; }).join(''); }).join('');
+  var nav=['terms','cancellation','privacy','cookies'].map(function(x){ return '<button type="button" class="flink'+(x===k?' on':'')+'" data-go="/'+x+'">'+esc(LEGAL[x].title)+'</button>'; }).join('');
+  app.innerHTML='<div class="wrap enter"><article class="legal"><span class="eyebrow">Good to know</span><h1>'+esc(L.title)+'</h1><nav class="legal-nav" aria-label="Policies">'+nav+'</nav>'+body+'</article></div>'+footerHTML();
+  hideTray();
+}
+function viewHome(){
+  setTop('site');
+  var catCards = CATS.filter(function(c){ return c.acts.length; }).map(function(c){
+    return '<button type="button" class="cat" data-go="/plan"><div style="position:relative">'+pic(c.img,c.cap,190,'border-radius:0',c.pos)+(c.festive?'<span class="badge">In the festive season</span>':'')+'</div><div class="body"><h3>'+c.name+'</h3><p class="d">'+c.d+'</p><span class="n">'+c.acts.length+' experience'+(c.acts.length===1?'':'s')+' '+ico('right',16)+'</span></div></button>';
+  }).join('');
+  app.innerHTML = ''+
+  '<div class="wrap enter">'+
+   '<section class="hero"><div class="grid"><div>'+
+     '<h1>Tell us your dates. We’ll plan your <em>Lapland.</em></h1>'+
+     '<p>Lapland Travel Assistant is run by local experts who know Rovaniemi inside out. Choose your dates and the activities you’d love, and we’ll plan your schedule and book everything for you.</p>'+
+     '<p class="hero-sub">Have a special request or a question? Get in touch any time.</p>'+
+     '<div class="ctas"><a class="btn" href="#/plan">Start building your trip</a><a class="btn ghost" href="#/ask">Ask us a question</a></div>'+
+   '</div><div class="scene">'+
+     '<video class="hero-video" autoplay muted loop playsinline preload="auto" poster="images/hero-poster.webp" aria-label="Aerial view of snow-covered forest and a winding river in Lapland"><source src="images/hero-video.mp4" type="video/mp4"></video>'+
+     '</div></div></section>'+
+   '<div class="trust">'+
+     '<div>'+ico('pin',22)+'Local experts in Rovaniemi</div><div>'+ico('hand',22)+'We book and tailor the schedule for you</div><div>'+ico('chat',22)+'Personal reply within 24 hours</div><div>'+ico('check',22)+'No payment until your plan is confirmed</div>'+
+   '</div>'+
+   '<section class="block" id="what"><div class="sec-head"><div><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Experiences</span><h2>What you can do</h2><p>Experiences in and around Rovaniemi, from easy family afternoons to private nights out in the wild.</p></div></div>'+
+     '<div class="cats">'+catCards+'<div class="cta-card'+(CATS.filter(function(c){ return c.acts.length; }).length%2?' fill':'')+'"><svg width="30" height="30" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="#C9A24A"/></svg><div><h3 style="font-size:28px">Ready to pick yours?</h3><p style="margin-top:10px">Add your dates and we’ll show what’s running while you’re here.</p></div><div><a class="btn gold" href="#/plan">Start building</a></div></div></div>'+
+   '</section>'+
+   '<section class="block" id="how"><div class="how"><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Simple planning</span><h2>How it works</h2><ol>'+
+     '<li><span class="num">1</span><h3>Add your dates</h3><p>Tell us when you’re coming to Rovaniemi and who’s in your group. We only show what runs on those days.</p></li>'+
+     '<li><span class="num">2</span><h3>Pick what you’d love</h3><p>Open a category, add the experiences you like and tell us anything we should know.</p></li>'+
+     '<li><span class="num">3</span><h3>We check and book it</h3><p>We check availability with our partners, send your plan with prices and book it all once you’re happy.</p></li>'+
+   '</ol><div style="margin-top:40px"><a class="btn gold" href="#/plan">Start building your trip</a></div></div></section>'+
+   '<section class="block" id="clothing"><div class="band"><div class="split"><div>'+
+     '<span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Clothing rental</span><h2>Warm clothing for your whole stay</h2>'+
+     '<p>Many visitors meet real Arctic winter for the first time here, and it can get as cold as −30°C. Most of our activities include warm overalls and boots for the tour itself. If you’d like proper winter gear for the rest of your stay too, we can arrange a full set for you.</p>'+
+     '<ul class="kit"><li>'+ico('check',18)+'Insulated, waterproof snow boots</li><li>'+ico('check',18)+'Thermal jacket and trousers, or an overall</li><li>'+ico('check',18)+'Insulated mittens</li><li>'+ico('check',18)+'Adult and children’s sizes, delivered to your accommodation and collected after you leave</li></ul>'+
+     '<p class="rent-price">Per person: '+rentalRates()+'</p>'+
+     '<button type="button" class="btn'+(has('rental')?' ghost':'')+'" data-toggle="rental" aria-pressed="'+has('rental')+'">'+(has('rental')?ico('check',16)+'Added to your trip':ico('plus',16)+'Add to my trip')+'</button>'+
+     '<p class="small-note">Available November to April. Bring your own warm base layers (wool or synthetic, not cotton), thermal socks and a beanie.</p>'+
+   '</div>'+pic('images/rental-1.webp','winter clothing set with jacket, trousers, kids’ overall, mittens and boots',440,'border-radius:24px')+'</div></div></section>'+
+   '<section class="block" id="about"><div class="band"><div class="split"><div><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'About us</span><h2>Who we are</h2>'+
+     '<p style="margin:18px 0 22px;color:var(--ink)">Local travel designers and guides who handpick every experience and the company behind it, then tailor the schedule around you.</p>'+
+     '<button type="button" class="btn ghost" data-go="/about">Read our story</button></div>'+
+     '<div class="team">'+
+       '<article class="person"><img src="images/team-saku.webp" alt="Saku, Chief Experience Officer" loading="lazy" width="112" height="112"><div><h3>Saku</h3><p class="role">Chief Experience Officer</p><p class="bio">A year in Lapland travel and a Master-rank League of Legends player. At home he leads a team of his own: a wife, three kids and three dogs, so no family trip is too complicated for him.</p></div></article>'+
+     '</div>'+
+   '</div></div></section>'+
+  '</div>'+
+  footerHTML();
+  hideTray();
+}
+
+function kidAgesHTML(){
+  if(!S.kids.length) return '';
+  var opts=function(v){ var o='<option value="">Age</option>'; for(var i=4;i<=MAXCHILD;i++) o+='<option value="'+i+'"'+(String(v)===String(i)?' selected':'')+'>'+i+'</option>'; return o; };
+  return '<span style="font-size:14px;font-weight:700">Children’s ages</span><div class="ages">'+S.kids.map(function(v,i){ return '<label>Child '+(i+1)+' <select data-kid="'+i+'">'+opts(v)+'</select></label>'; }).join('')+'</div><span class="hint">Prices and age limits vary by activity, so this helps us show the right prices. Aged '+(MAXCHILD+1)+' or over? Add them as an adult.</span>';
+}
+function viewDates(){
+  setTop('builder',0);
+  app.innerHTML='<div class="wrap builder enter" style="max-width:820px">'+
+   '<div class="b-title"><h1>When are you visiting Rovaniemi?</h1><p>We’ll only show experiences that run while you’re here.</p></div>'+
+   '<form class="card" id="f1" style="margin-top:28px" novalidate><div class="fields">'+
+    '<div class="field"><label for="arr">Arrival</label><input id="arr" type="date" value="'+esc(S.arr)+'" required></div>'+
+    '<div class="field"><label for="dep">Departure</label><input id="dep" type="date" value="'+esc(S.dep)+'" required></div>'+
+    '<div class="field"><span style="font-size:14px;font-weight:700" id="adl">Adults <span style="font-weight:400;color:var(--muted)">('+(MAXCHILD+1)+'+)</span></span><div class="stepper" role="group" aria-labelledby="adl"><button type="button" data-step="adults:-1" aria-label="One fewer adult">−</button><output id="adults" aria-live="polite">'+S.adults+'</output><button type="button" data-step="adults:1" aria-label="One more adult">+</button></div></div>'+
+    '<div class="field"><span style="font-size:14px;font-weight:700" id="chl">Children <span style="font-weight:400;color:var(--muted)">(4–'+MAXCHILD+')</span></span><div class="stepper" role="group" aria-labelledby="chl"><button type="button" data-step="children:-1" aria-label="One fewer child">−</button><output id="children" aria-live="polite">'+S.kids.length+'</output><button type="button" data-step="children:1" aria-label="One more child">+</button></div></div>'+
+    '<div class="field"><span style="font-size:14px;font-weight:700" id="inl">Infants <span style="font-weight:400;color:var(--muted)">(0–3)</span></span><div class="stepper" role="group" aria-labelledby="inl"><button type="button" data-step="infants:-1" aria-label="One fewer infant">−</button><output id="infants" aria-live="polite">'+S.infants+'</output><button type="button" data-step="infants:1" aria-label="One more infant">+</button></div></div>'+
+    '<div class="field full" id="kidAges">'+kidAgesHTML()+'</div>'+
+    '<div class="field full"><label for="hotel">Where are you staying? <span style="font-weight:400;color:var(--muted)">(optional)</span></label><input id="hotel" type="text" placeholder="Hotel, cabin or area" value="'+esc(S.hotel)+'"></div>'+
+   '</div><p class="err" id="e1" role="alert"></p>'+
+   '<div class="row-actions"><button type="button" class="link" data-go="/">'+ico('left',16)+'Back</button><button class="btn" type="submit">Continue</button></div></form></div>';
+  hideTray();
+  $('#arr').min=$('#dep').min=todayISO();
+  $('#f1').addEventListener('submit',function(e){
+    e.preventDefault();
+    var a=$('#arr').value, b=$('#dep').value, er=$('#e1');
+    if(!a||!b){ er.textContent='Add both your arrival and departure dates.'; return; }
+    if(d(b)<d(a)){ er.textContent='Your departure date is before your arrival. Check the dates.'; return; }
+    if(a<todayISO()){ er.textContent='Your arrival date is in the past. Check the dates.'; return; }
+    if(S.kids.some(function(x){return x==='';})){ er.textContent='Add each child’s age.'; return; }
+    S.dest='rovaniemi'; S.destOther=''; S.arr=a; S.dep=b; S.hotel=$('#hotel').value.trim(); save(); go('/plan/activities');
+  });
+}
+
+function trayHTML(){
+  var list = S.items.length ? '<ul>'+S.items.map(function(id){ var a=ALL[id]; if(!a) return '';
+      var opts='<option value="">Any day</option>'+days().map(function(x){ var v=isoLocal(x); return '<option value="'+v+'"'+(S.pref[id]===v?' selected':'')+'>'+fmt(x,{weekday:'short',day:'numeric',month:'short'})+'</option>'; }).join('');
+      var e=estimate(id);
+      return '<li><div class="h"><div><b>'+esc(a.name)+'</b><small>'+esc(a.catName)+'</small></div><button type="button" class="x" data-remove="'+id+'" aria-label="Remove '+esc(a.name)+'">'+ico('x',14)+'</button></div>'+
+        '<div class="est"><span>'+(e.amount!==null?'Est. <b>'+money(e.amount)+'</b>':esc(e.note))+'</span></div>'+
+        e.warn.map(function(w){ return '<small class="warn">'+esc(w)+'</small>'; }).join('')+
+        (S.pkgNote[id]?'<small>Your note: '+esc(S.pkgNote[id])+'</small>':'')+
+        (a.cat==='packages'||a.cat==='extras'?'':'<label>'+'Preferred day'+' <select data-pref="'+id+'">'+opts+'</select></label>')+
+        (canPrivate(a)?'<label class="privtick"><input type="checkbox" data-priv="'+id+'"'+(S.priv[id]?' checked':'')+'>Ask for it as a private experience</label>':'')+'</li>'; }).join('')+'</ul>'
+    : '<div class="empty">Nothing added yet. Open a category and add the experiences you’d like.</div>';
+  return '<div class="card"><div style="display:flex;justify-content:space-between;align-items:center"><h2>Your trip</h2><span class="note" style="font-size:14px">'+S.items.length+' selected</span></div>'+
+    '<div class="when">'+ico('cal',18)+'<span>'+tripLine()+'</span></div>'+list+totalHTML()+
+    '<button type="button" class="btn" data-go="/plan/details"'+(S.items.length?'':' disabled')+'>Continue to your details</button>'+
+    '<p class="note">No payment now. We check availability and send you a plan with prices.</p></div>';
+}
+function totalHTML(){
+  if(!S.items.length) return '';
+  var e=totalEstimate();
+  return '<div class="total"><div><span>Estimated total</span><b>'+money(e.t)+'</b></div><small>For '+guests()+'.'+(e.open?' Plus '+e.open+' item'+(e.open>1?'s':'')+' priced in your plan.':'')+' Final prices come with your plan.</small></div>';
+}
+function renderTray(){
+  var t=$('#tray'); if(t) t.innerHTML=trayHTML();
+  var si=$('#sheetInner'); if($('#sheet').classList.contains('open')) si.innerHTML='<div class="tray">'+trayHTML()+'</div><button type="button" class="btn ghost" style="width:100%;margin-top:12px" data-close>Keep browsing</button>';
+  var tt=totalEstimate();
+  var m=$('#mbar'); m.innerHTML='<div><small>'+S.items.length+' selected'+(S.items.length?' · est.':'')+'</small><b>'+(S.items.length?money(tt.t):'Your trip')+'</b></div><div style="display:flex;gap:10px"><button type="button" class="btn small ghost" style="color:#fff;border-color:#fff" data-open>View</button><button type="button" class="btn small gold" data-go="/plan/details"'+(S.items.length?'':' disabled')+'>Continue</button></div>';
+  m.classList.add('show');
+}
+function hideTray(){ $('#mbar').classList.remove('show'); $('#sheet').classList.remove('open'); }
+function needDates(){ if(!S.dest||!S.arr||!S.dep){ go('/plan'); return true; } return false; }
+
+function elevatedMark(size){ return '<span class="elev-mark'+(size?' '+size:'')+'">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'<span class="em-l">LAPLAND</span><span class="em-t">TRAVEL ASSISTANT</span><span class="em-e">ELEVATED</span></span>'; }
+function packagesHTML(home){
+  var list=home?PACKAGES:PACKAGES.filter(function(k){ return k.dest===S.dest; }); if(!list.length) return '';
+  return '<section class="pkgs"><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Ready-made packages</span><h2>Start from a package</h2><p>Three ways to see Lapland, each planned around the best days and times. Pick one and tell us if you’d like to change anything.'+(home?' Packages are currently available in Rovaniemi.':'')+'</p><div class="pkg-grid'+(home?' four':'')+'">'+
+   list.map(function(k,i){ var on=has(k.id);
+     if(k.elevated) return '<div class="pkg elevated">'+elevatedMark('sm')+'<h3>'+esc(k.name)+'</h3><p>'+esc(k.d)+'</p><div class="pkg-btns"><button type="button" class="btn small gold" data-go="/private">Plan your Elevated trip</button></div></div>';
+     return '<div class="pkg'+(on?' added':'')+'"><span class="tier">'+(i+1)+' · '+esc(k.tier)+'</span><h3>'+esc(k.name)+'</h3><p>'+esc(k.d)+'</p><p class="pkg-price">From <b>€[PRICE]</b> per person</p><div class="pkg-btns"><button type="button" class="btn small ghost" data-book="'+k.id+'">Browse the package</button>'+
+       (on?'<button type="button" class="btn small ghost" data-toggle="'+k.id+'" aria-pressed="true">'+ico('check',16)+'Chosen</button>':'<button type="button" class="btn small" data-choose="'+k.id+'">Choose</button>')+'</div></div>'; }).join('')+
+   '</div></section>';
+}
+// ---------- flipbooks (empty templates for now)
+function fbPage(kind,k,n){
+  var el=k.elevated, star='<svg width="22" height="22" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="#C9A24A"/></svg>';
+  var lines=function(c){ var h=''; for(var i=0;i<c;i++) h+='<i style="width:'+(60+((i*37)%38))+'%"></i>'; return '<div class="fb-lines">'+h+'</div>'; };
+  var photo=function(t){ return '<div class="fb-photo"><span>'+t+'</span></div>'; };
+  var foot='<div class="fb-foot"><span>'+esc(k.name)+'</span><span>'+n+'</span></div>';
+  if(kind==='cover') return '<div class="fb-cover">'+star+'<span class="fb-brand">LAPLAND<small>TRAVEL ASSISTANT</small></span><span class="fb-tier">'+esc(k.tier)+'</span><h3>'+esc(k.name)+'</h3><p>'+esc(k.d)+'</p><span class="fb-hint">Open the book →</span></div>';
+  if(kind==='back') return '<div class="fb-cover back">'+star+'<span class="fb-brand">LAPLAND<small>TRAVEL ASSISTANT</small></span><p>'+CONTACT.email+'<br>'+CONTACT.phone+'</p></div>';
+  if(kind==='welcome') return '<div class="fb-in"><span class="fb-eye">Welcome</span><h4>[Package introduction]</h4>'+photo('Photo')+lines(5)+foot+'</div>';
+  if(kind==='glance') return '<div class="fb-in"><span class="fb-eye">At a glance</span><h4>[Your days at a glance]</h4><div class="fb-days">'+[1,2,3,4].map(function(x){return '<div><b>Day '+x+'</b>'+lines(1)+'</div>';}).join('')+'</div>'+foot+'</div>';
+  if(kind==='day') return '<div class="fb-in"><span class="fb-eye">Day '+n.day+'</span><h4>[Day '+n.day+' title]</h4>'+photo('Photo')+'<div class="fb-sched"><div><b>[Time]</b>'+lines(2)+'</div><div><b>[Time]</b>'+lines(2)+'</div></div>'+foot.replace('>'+n+'<','>'+n.p+'<')+'</div>';
+  if(kind==='incl') return '<div class="fb-in"><span class="fb-eye">What’s included</span><h4>[Included in this package]</h4><ul class="fb-list">'+[1,2,3,4,5,6].map(function(){return '<li>'+lines(1)+'</li>';}).join('')+'</ul>'+foot+'</div>';
+  if(kind==='price') return '<div class="fb-in"><span class="fb-eye">Price</span><h4>From €[PRICE] per person</h4>'+lines(3)+'<div class="fb-choose"><button type="button" class="btn'+(el?' gold':'')+'" data-flip-choose="'+k.id+'">'+(el?'Plan your Elevated trip':'Choose this package')+'</button><span>You can adjust anything before we book.</span></div>'+foot+'</div>';
+  return '';
+}
+var FB={k:null, leaf:0, n:0};
+function openFlipbook(id){
+  var k=ALL[id]; FB.k=k; FB.leaf=0;
+  var pages=[fbPage('cover',k,0), fbPage('welcome',k,1), fbPage('glance',k,2)];
+  [1,2,3,4].forEach(function(dn,i){ pages.push(fbPage('day',k,{day:dn,p:3+i})); });
+  pages.push(fbPage('incl',k,7)); pages.push(fbPage('price',k,8)); pages.push(fbPage('back',k,9));
+  var leaves=[]; for(var i=0;i<pages.length;i+=2) leaves.push([pages[i],pages[i+1]||'']);
+  FB.n=leaves.length;
+  var html='<div class="fb-top"><span class="eyebrow" style="margin:0">'+esc(k.tier)+' package</span><button type="button" class="x" data-flip-close aria-label="Close">'+ico('x',14)+'</button></div>'+
+    '<div class="fb-stage"><div class="book'+(k.elevated?' elevated':'')+'" id="book">'+
+     leaves.map(function(l,i){ return '<div class="leaf" data-leaf="'+i+'" style="z-index:'+(leaves.length-i)+'"><div class="face front">'+l[0]+'</div><div class="face back">'+l[1]+'</div></div>'; }).join('')+
+    '</div></div>'+
+    '<div class="fb-ctrl"><button type="button" class="btn small ghost" data-flip="prev" aria-label="Previous page">'+ico('left',16)+'Back</button><span id="fbCount"></span><button type="button" class="btn small" data-flip="next" aria-label="Next page">Next'+ico('right',16)+'</button></div>';
+  var f=$('#flip'); $('#flipInner').innerHTML=html; f.classList.add('open'); fbUpdate();
+}
+function fbUpdate(){
+  var book=$('#book'); if(!book) return;
+  Array.prototype.forEach.call(book.querySelectorAll('.leaf'),function(l,i){
+    var fl=i<FB.leaf; l.classList.toggle('flipped',fl); l.style.zIndex= fl ? i+1 : FB.n-i + (i===FB.leaf?FB.n:0);
+  });
+  book.classList.toggle('closed-front',FB.leaf===0); book.classList.toggle('closed-back',FB.leaf===FB.n);
+  var c=$('#fbCount'); if(c) c.textContent = FB.leaf===0?'Cover':(FB.leaf===FB.n?'Back cover':'Pages '+(FB.leaf*2-1)+'–'+(FB.leaf*2));
+}
+function fbGo(dir){ var n=FB.leaf+dir; if(n<0||n>FB.n) return; FB.leaf=n; fbUpdate(); }
+function closeFlip(){ $('#flip').classList.remove('open'); }
+function viewPackages(){
+  setTop('site');
+  app.innerHTML='<div class="wrap enter" style="padding:56px 0 24px"><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Ready-made packages</span><h1 class="pk-h1">Lapland packages</h1><p class="pk-lead">Three ways to see Lapland, each planned around the best days and times. Open a book to page through it, then choose it and tell us if you’d like to change anything. Packages are currently available in Rovaniemi.</p>'+
+   '<div class="shelf">'+PACKAGES.map(function(k,i){ var on=has(k.id);
+     return '<div class="shelf-item"><button type="button" class="mini-book'+(k.elevated?' elevated':'')+'" data-flip-open="'+k.id+'" aria-label="Open the '+esc(k.name)+' book"><span class="mb-star">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'</span><span class="mb-tier">'+(i+1)+' · '+esc(k.tier)+'</span><span class="mb-name">'+esc(k.name)+'</span><span class="mb-brand">LAPLAND TRAVEL ASSISTANT</span></button>'+
+       '<p>'+esc(k.d)+'</p>'+(k.elevated?'<button type="button" class="btn small gold" data-flip-open="'+k.id+'">Open the book</button>':'<div class="pkg-btns"><button type="button" class="btn small ghost" data-flip-open="'+k.id+'">Open the book</button>'+(on?'<span class="chosen">'+ico('check',16)+'Chosen</span>':'')+'</div>')+'</div>'; }).join('')+
+   '</div>'+(PACKAGES.some(function(k){return has(k.id);})?'<div class="row-actions" style="justify-content:flex-start"><a class="btn" href="#/plan">Continue planning your trip</a></div>':'')+'</div>'+footerHTML();
+  hideTray();
+}
+function openModal(html){ var m=$('#modal'); $('#modalInner').innerHTML=html; m.classList.add('open'); var f=m.querySelector('textarea,button'); if(f) f.focus(); }
+function closeModal(){ $('#modal').classList.remove('open'); }
+function extrasHTML(){
+  if(!avail(RENTAL)) return '';
+  var a=RENTAL, on=has(a.id);
+  return '<div class="extras"><h2>Extras</h2><p>Add these to your trip request too.</p><div class="acts" style="margin-top:16px"><div class="act'+(on?' added':'')+'">'+pic(a.img,a.name.toLowerCase(),0)+'<div><h3>'+esc(a.name)+'</h3><p>'+esc(a.d)+'</p><div class="meta"><span class="pr">Per person: '+rentalRates()+'</span></div></div>'+
+    '<div class="go"><button type="button" class="btn small'+(on?' ghost':'')+'" data-toggle="'+a.id+'" aria-pressed="'+on+'">'+(on?ico('check',16)+'Added':ico('plus',16)+'Add to trip')+'</button></div></div></div></div>';
+}
+function viewWish(){
+  setTop('builder',1);
+  var w=S.wish||{text:'',interests:[],recommend:false};
+  var ints=CATS.map(function(c){ return c.name; }).concat(['Something else']);
+  var chips=ints.map(function(n){ var on=(w.interests||[]).indexOf(n)>-1; return '<label class="pill"><input type="checkbox" name="int" value="'+esc(n)+'"'+(on?' checked':'')+'><span>'+esc(n)+'</span></label>'; }).join('');
+  var intro = S.dest==='other'
+    ? 'We plan trips all over Lapland. Tell us what you have in mind for '+esc(place())+', or leave it to us and we’ll suggest a plan.'
+    : 'Our activity list for '+esc(place())+' is coming soon, but we already plan trips there. Tell us what you have in mind, or leave it to us and we’ll suggest a plan.';
+  app.innerHTML='<div class="wrap builder enter" style="max-width:820px">'+
+   '<div class="b-title"><h1>What would you like to do?</h1><p>'+intro+'</p></div>'+
+   '<form class="card" id="fw" style="margin-top:28px" novalidate><div class="fields">'+
+    '<fieldset class="field full dest"><legend>What interests you? <span style="font-weight:400;color:var(--muted)">(pick any)</span></legend><div class="pills">'+chips+'</div></fieldset>'+
+    '<div class="field full"><label for="wtext">Do you have something in mind?</label><textarea id="wtext" placeholder="For example: a husky ride with the kids, a northern lights evening, a private dinner…">'+esc(w.text||'')+'</textarea></div>'+
+    '<label class="check full"><input type="checkbox" id="wrec"'+(w.recommend?' checked':'')+'>Not sure yet – please recommend activities for us</label>'+
+   '</div><p class="err" id="ew" role="alert"></p>'+
+   '<div class="row-actions"><button type="button" class="link" data-go="/plan">'+ico('left',16)+'Change dates or group</button><button class="btn" type="submit">Continue to your details</button></div></form>'+
+   '<p class="note" style="margin-top:14px">'+tripLine()+'</p></div>';
+  hideTray();
+  $('#fw').addEventListener('submit',function(e){
+    e.preventDefault();
+    S.wish={text:$('#wtext').value.trim(), interests:Array.prototype.map.call(document.querySelectorAll('input[name="int"]:checked'),function(x){return x.value;}), recommend:$('#wrec').checked};
+    if(!wishOK()){ $('#ew').textContent='Pick something you’re interested in, tell us what you have in mind, or tick the box and we’ll recommend.'; return; }
+    save(); go('/plan/details');
+  });
+}
+function viewCats(){
+  if(needDates()) return;
+  if(wishMode()){ viewWish(); return; }
+  setTop('builder',1);
+  var cc=cats().map(function(c){ var n=c.acts.filter(function(a){return has(a.id);}).length;
+    return '<button type="button" class="cat" data-go="/plan/c/'+c.id+'"><div style="position:relative">'+pic(c.img,c.cap,170,'border-radius:0',c.pos)+(n?'<span class="cnt">'+n+' added</span>':'')+'</div><div class="body"><h3>'+c.name+'</h3><p class="d">'+c.d+'</p><span class="n">See '+acts(c).length+' experience'+(acts(c).length===1?'':'s')+' '+ico('right',16)+'</span></div></button>'; }).join('');
+  var fest = (festiveOn() || !CATS.some(function(c){return c.festive && c.acts.length;}))? '' : '<p class="note" style="margin-top:18px">Festive experiences run between mid-November and early January, so they aren’t shown for these dates.</p>';
+  app.innerHTML='<div class="wrap builder enter"><div class="b-grid"><div>'+
+    '<div class="b-title"><h1>What’s on in '+esc(place())+'</h1><p>'+range()+'. Open a category and add the experiences you’d like. You can pick from several.</p></div>'+
+    (PACKAGES.some(function(k){return k.dest===S.dest;})?'<a class="pkg-banner" href="#/packages">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'<span><b>Prefer a ready-made package?</b> Browse our four Lapland packages</span>'+ico('right',18)+'</a>':'')+
+    (cc?'<div class="cats two" style="margin-top:28px">'+cc+'</div>':'<div class="note" style="margin-top:28px"><p>None of our activities run on these dates. Most of them run in winter, from November to April.</p><p style="margin-top:10px">Have something else in mind? <a href="#/ask">Ask us</a> and we’ll see what we can arrange.</p></div>')+fest+extrasHTML()+
+    '<div class="row-actions"><button type="button" class="link" data-go="/plan">'+ico('left',16)+'Change dates or group</button></div>'+
+   '</div><aside class="tray desk" id="tray" aria-label="Your trip"></aside></div></div>';
+  renderTray();
+}
+
+function viewCat(id){
+  if(needDates()) return;
+  if(wishMode()){ go('/plan/activities'); return; }
+  var c=CATS.filter(function(x){return x.id===id;})[0]; if(!c){ go('/plan/activities'); return; }
+  setTop('builder',1);
+  var rows=acts(c).map(function(a){ var on=has(a.id);
+    var more = a.desc ? '<details class="more"><summary>See details</summary>'+
+      '<div class="desc">'+a.desc.map(function(t){return '<p>'+esc(t)+'</p>';}).join('')+'</div>'+
+      '<div class="facts"><span><b>Duration</b> '+esc(a.duration)+'</span><span><b>Starts</b> '+esc(a.starts)+'</span>'+(a.group?'<span><b>Group</b> '+esc(a.group)+'</span>':'')+'</div>'+
+      '<div class="cols"><div><h4>Included</h4><ul>'+a.incl.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>'+
+      (a.excl.length?'<div><h4>Not included</h4><ul>'+a.excl.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>':'')+'</div>'+
+      '<div class="know"><h4>Good to know</h4><ul>'+a.know.map(function(t){return '<li>'+esc(t)+'</li>';}).join('')+'</ul></div>'+
+      '</details>' : '';
+    return '<div class="act'+(on?' added':'')+(a.desc?' rich':'')+'">'+pic(a.img,a.name.toLowerCase(),0)+'<div><h3>'+esc(a.name)+'</h3><p>'+esc(a.d)+'</p><div class="meta">'+(known(a.duration)?'<span>'+ico('clock',16)+esc(a.duration)+'</span>':'')+(known(a.ages)?'<span>'+ico('users',16)+(/^\d/.test(a.ages)?'Ages ':'')+esc(a.ages)+'</span>':'')+'<span class="pr">'+priceHTML(a)+'</span></div></div>'+
+     '<div class="go"><button type="button" class="btn small'+(on?' ghost':'')+'" data-toggle="'+a.id+'" aria-pressed="'+on+'">'+(on?ico('check',16)+'Added':ico('plus',16)+'Add to trip')+'</button></div>'+more+'</div>'; }).join('');
+  app.innerHTML='<div class="wrap builder enter"><div class="b-grid"><div>'+
+    '<button type="button" class="link" data-go="/plan/activities">'+ico('left',16)+'All categories</button>'+
+    (c.img?pic(c.img,c.cap,0,'',c.pos).replace('class="ph photo"','class="ph photo banner"'):'')+'<div class="b-title" style="margin-top:'+(c.img?'24':'8')+'px"><h1>'+c.name+'</h1><p>Available '+range()+'. Add as many as you like; we’ll confirm times with you.</p></div>'+
+    '<div class="acts">'+rows+'</div></div><aside class="tray desk" id="tray" aria-label="Your trip"></aside></div></div>';
+  renderTray();
+}
+
+function wishSummary(){
+  var w=S.wish||{}, out='';
+  if(w.interests&&w.interests.length) out+='<li><div class="h"><div><b>Interested in</b><small>'+esc(w.interests.join(', '))+'</small></div></div></li>';
+  if(w.text) out+='<li><div class="h"><div><b>In mind</b><small>'+esc(w.text)+'</small></div></div></li>';
+  if(w.recommend) out+='<li><div class="h"><div><b>Recommendations</b><small>Please suggest activities for us</small></div></div></li>';
+  return out;
+}
+function viewDetails(){
+  if(needDates()) return;
+  var wm=wishMode();
+  if(wm ? !wishOK() : !S.items.length){ go('/plan/activities'); return; }
+  setTop('builder',2);
+  var f=S.form||{};
+  var sum= wm ? wishSummary() : S.items.map(function(id){ var a=ALL[id]; var p=a&&a.cat==='extras'?'Whole stay':S.pref[id]? fmt(d(S.pref[id]),{weekday:'short',day:'numeric',month:'short'}):'Any day';
+    return '<li><div class="h"><div><b>'+esc(a.name)+'</b><small>'+esc(a.catName)+' · '+p+(isPriv(id)?' · Private':'')+'</small></div></div></li>'; }).join('');
+  app.innerHTML='<div class="wrap builder enter"><div class="b-grid"><div>'+
+   '<div class="b-title"><h1>Almost done. Where do we reply?</h1><p>We’ll send your plan and prices here.</p></div>'+
+   '<form class="card" id="f3" style="margin-top:28px" novalidate><div class="fields">'+HP('trip')+
+    '<div class="field"><label for="fn">First name</label><input id="fn" autocomplete="given-name" value="'+esc(f.fn||'')+'" required></div>'+
+    '<div class="field"><label for="ln">Last name</label><input id="ln" autocomplete="family-name" value="'+esc(f.ln||'')+'"></div>'+
+    '<div class="field"><label for="em">Email</label><input id="em" type="email" autocomplete="email" value="'+esc(f.em||'')+'" required></div>'+
+    '<div class="field"><label for="phn">Phone or WhatsApp</label><input id="phn" type="tel" autocomplete="tel" value="'+esc(f.phn||'')+'"></div>'+
+    '<div class="field full"><label for="note">Anything else we should know?</label><textarea id="note" placeholder="Special occasions, dietary needs, mobility, pace, budget…">'+esc(f.note||'')+'</textarea></div>'+
+    '<label class="check full"><input type="checkbox" id="gdpr" required><span>I agree that my details are used to plan this trip, as described in our <a href="#/privacy" target="_blank" rel="noopener">privacy policy</a></span></label>'+
+   '</div><p class="err" id="e3" role="alert"></p>'+
+   '<div class="row-actions"><button type="button" class="link" data-go="/plan/activities">'+ico('left',16)+'Back to activities</button><button class="btn" type="submit">Send my trip request</button></div></form></div>'+
+   '<aside class="tray" aria-label="Trip summary"><div class="card"><h2>Your trip</h2><div class="when">'+ico('cal',18)+'<span>'+tripLine()+(S.hotel?' · '+esc(S.hotel):'')+'</span></div><ul>'+sum+'</ul>'+(wm?'':totalHTML())+'<button type="button" class="link" data-go="/plan/activities">'+(wm?'Edit your wishes':'Edit activities')+'</button><p class="note">No payment now. We check availability personally and reply within 24 hours.</p></div></aside>'+
+  '</div></div>';
+  hideTray();
+  $('#f3').addEventListener('submit',function(e){
+    e.preventDefault(); var er=$('#e3');
+    var v={fn:$('#fn').value.trim(),ln:$('#ln').value.trim(),em:$('#em').value.trim(),phn:$('#phn').value.trim(),ages:$('#ages')?$('#ages').value.trim():'',note:$('#note').value.trim()};
+    if(!v.fn){ er.textContent='Add your first name.'; $('#fn').focus(); return; }
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v.em)){ er.textContent='Add an email address we can reply to, like name@example.com.'; $('#em').focus(); return; }
+    if(!$('#gdpr').checked){ er.textContent='Tick the box to let us use your details for planning.'; return; }
+    S.form=v; save();
+    var r=tripRequest(v);
+    sendRequest('trip', r.data, r.text, r.subject, e.submitter||$('#f3 button[type=submit]'), er, function(){ go('/plan/sent'); });
+  });
+}
+
+function viewSent(){
+  setTop('none');
+  var f=S.form||{};
+  var sum= wishMode() ? wishSummary() : S.items.map(function(id){ var a=ALL[id]; return a? '<li><div class="h"><div><b>'+esc(a.name)+'</b><small>'+esc(a.catName)+' · '+(a.cat==='extras'?'Whole stay':S.pref[id]? fmt(d(S.pref[id]),{weekday:'short',day:'numeric',month:'short'}):'Any day')+(isPriv(id)?' · Private':'')+'</small></div></div></li>':''; }).join('');
+  app.innerHTML='<div class="wrap"><div class="sent enter">'+
+   '<svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="#C9A24A"/></svg>'+
+   '<h1>Thanks'+(f.fn?', '+esc(f.fn):'')+'. Your trip request is with us.</h1>'+
+   '<p style="color:var(--muted)">We’ll reply to '+esc(f.em||'your email')+' within 24 hours. Here’s what happens next.</p>'+
+   '<div class="next"><div>'+ico('cal',24)+'<h3>We check availability</h3><p>We contact our partners for your dates and preferred days.</p></div><div>'+ico('chat',24)+'<h3>You get your plan</h3><p>A day-by-day plan with times and prices.</p></div><div>'+ico('check',24)+'<h3>We book it</h3><p>Once you’re happy, we book everything and send your confirmations.</p></div></div>'+
+   '<div class="tray sum"><div class="card"><h2>What you sent</h2><div class="when">'+ico('cal',18)+'<span>'+tripLine()+'</span></div><ul>'+sum+'</ul></div></div>'+
+   '<button type="button" class="btn ghost" data-reset>Back to the homepage</button>'+
+  '</div></div>';
+  hideTray();
+}
+
+// ---------- router ----------
+function route(){
+  var h=(location.hash||'#/').slice(1)||'/';
+  if(h==='/') viewHome();
+  else if(h==='/plan') viewDates();
+  else if(h==='/plan/activities') viewCats();
+  else if(h.indexOf('/plan/c/')===0) viewCat(h.slice(8));
+  else if(h==='/plan/details') viewDetails();
+  else if(h==='/plan/sent') viewSent();
+  else if(h==='/about') viewAbout();
+  else if(h==='/packages'){ if(SHOW_PACKAGES) viewPackages(); else viewHome(); }
+  else if(h==='/ask') viewAsk(false);
+  else if(h==='/ask/sent') viewAsk(true);
+  else if(LEGAL[h.slice(1)]) viewLegal(h.slice(1));
+  else viewHome();
+  window.scrollTo(0,0);
+  var h1=app.querySelector('h1'); if(h1){ h1.setAttribute('tabindex','-1'); h1.focus({preventScroll:true}); }
+}
+window.addEventListener('hashchange',route);
+
+document.addEventListener('click',function(e){
+  var fb=e.target.closest('[data-flip-open],[data-flip],[data-flip-close],[data-flip-choose],.leaf');
+  if(fb){
+    if(fb.dataset.flipOpen){ openFlipbook(fb.dataset.flipOpen); }
+    else if(fb.dataset.flip){ fbGo(fb.dataset.flip==='next'?1:-1); }
+    else if(fb.hasAttribute('data-flip-close')){ closeFlip(); }
+    else if(fb.dataset.flipChoose){ var kk=ALL[fb.dataset.flipChoose]; closeFlip(); if(kk.elevated){ go('/private'); } else { var bt=document.createElement('button'); bt.dataset.choose=kk.id; document.body.appendChild(bt); bt.click(); bt.remove(); } }
+    else if(fb.classList.contains('leaf')){ var li=+fb.dataset.leaf; fbGo(li<FB.leaf?-1:1); }
+    return;
+  }
+  if(e.target.id==='flip'){ closeFlip(); return; }
+  var pk=e.target.closest('[data-book],[data-choose],[data-confirm-pkg],[data-close-modal]');
+  if(pk){
+    if(pk.dataset.book){ var k=ALL[pk.dataset.book]; openModal('<button type="button" class="x modal-x" data-close-modal aria-label="Close">'+ico('x',14)+'</button><span class="eyebrow">'+esc(k.tier)+' package</span><h2>'+esc(k.name)+'</h2><div class="flip-ph">'+'<svg width="34" height="34" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="#C9A24A"/></svg>'+'<b>Day-by-day package coming soon</b><span>You’ll be able to page through this package here like a small brochure.</span></div><div class="row-actions"><button type="button" class="btn ghost" data-close-modal>Close</button><button type="button" class="btn" data-choose="'+k.id+'">Choose this package</button></div>'); }
+    else if(pk.dataset.choose){ var k2=ALL[pk.dataset.choose]; openModal('<button type="button" class="x modal-x" data-close-modal aria-label="Close">'+ico('x',14)+'</button><span class="eyebrow">'+esc(k2.tier)+' package</span><h2>Would you like to adjust or change anything?</h2><p style="color:var(--muted);margin-top:8px">Add, swap or skip anything in '+esc(k2.name)+'. Leave it empty if it’s perfect as it is.</p><div class="field" style="margin-top:18px"><label for="pkgNote">Your changes <span style="font-weight:400;color:var(--muted)">(optional)</span></label><textarea id="pkgNote" placeholder="For example: swap the snowmobile ride for huskies, or add a free day">'+esc(S.pkgNote[k2.id]||'')+'</textarea></div><div class="row-actions"><button type="button" class="btn ghost" data-close-modal>Cancel</button><button type="button" class="btn" data-confirm-pkg="'+k2.id+'">Add to my trip</button></div>'); }
+    else if(pk.dataset.confirmPkg){ var id2=pk.dataset.confirmPkg; S.pkgNote[id2]=($('#pkgNote').value||'').trim(); if(!has(id2)) S.items.push(id2); if(!S.dest) S.dest=ALL[id2].dest; save(); closeModal(); var y3=window.scrollY, hh3=(location.hash||'').slice(1);
+      if(hh3==='/packages'){ viewPackages(); window.scrollTo(0,y3); } else if(hh3==='/'||hh3===''){ viewHome(); window.scrollTo(0,y3); } else { viewCats(); window.scrollTo(0,y3); } }
+    else if(pk.hasAttribute('data-close-modal')) closeModal();
+    return;
+  }
+  var t=e.target.closest('[data-go],[data-scroll],[data-toggle],[data-remove],[data-step],[data-open],[data-close],[data-reset]');
+  if(!t) { if(e.target.id==='sheet'){ $('#sheet').classList.remove('open'); } if(e.target.id==='modal') closeModal(); return; }
+  if(t.hasAttribute('disabled')) return;
+  if(t.dataset.go!==undefined){ $('#sheet').classList.remove('open'); go(t.dataset.go); }
+  else if(t.dataset.scroll){ var sid=t.dataset.scroll, target=document.getElementById(sid);
+    if(target) target.scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'});
+    else { go('/'); setTimeout(function(){ var t2=document.getElementById(sid); if(t2) t2.scrollIntoView(); },60); } }
+  else if(t.dataset.toggle){ var id=t.dataset.toggle; if(has(id)) S.items=S.items.filter(function(x){return x!==id;}); else S.items.push(id); save();
+    var h=(location.hash||'').slice(1), y=window.scrollY, rr=null;
+    if(h.indexOf('/plan/c/')===0) rr=function(){ viewCat(h.slice(8)); };
+    else if(h==='/plan/activities') rr=viewCats;
+    else if(h==='/'||h==='') rr=viewHome;
+    if(rr){ rr(); window.scrollTo(0,y); var b=document.querySelector('[data-toggle="'+id+'"]'); if(b) b.focus({preventScroll:true}); } }
+  else if(t.dataset.remove){ var r=t.dataset.remove; S.items=S.items.filter(function(x){return x!==r;}); delete S.pref[r]; delete S.priv[r]; delete S.pkgNote[r]; save();
+    var hh=(location.hash||'').slice(1); var y2=window.scrollY; if(hh.indexOf('/plan/c/')===0) viewCat(hh.slice(8)); else if(hh==='/plan/activities') viewCats(); else renderTray(); window.scrollTo(0,y2); }
+  else if(t.dataset.step){ var p=t.dataset.step.split(':'), k=p[0], dlt=+p[1];
+    if(k==='children'){ var nk=S.kids.length+dlt; if(nk<0||nk>12) return; if(dlt>0) S.kids.push(''); else S.kids.pop(); $('#children').textContent=S.kids.length; var ka=$('#kidAges'); if(ka) ka.innerHTML=kidAgesHTML(); save(); }
+    else { var n=S[k]+dlt; var min=k==='adults'?1:0; if(n<min||n>20) return; S[k]=n; $('#'+k).textContent=n; save(); } }
+  else if(t.hasAttribute('data-open')){ $('#sheet').classList.add('open'); renderTray(); }
+  else if(t.hasAttribute('data-close')){ $('#sheet').classList.remove('open'); }
+  else if(t.hasAttribute('data-reset')){ S={dest:'rovaniemi',destOther:'',arr:'',dep:'',adults:2,kids:[],infants:0,hotel:'',items:[],pref:{},priv:{},pkgNote:{},form:{},wish:{text:'',interests:[],recommend:false}}; save(); go('/'); }
+});
+document.addEventListener('change',function(e){
+  var pv=e.target.closest('[data-priv]'); if(pv){ if(pv.checked) S.priv[pv.dataset.priv]=true; else delete S.priv[pv.dataset.priv]; save(); renderTray(); return; }
+  var s=e.target.closest('[data-pref]'); if(s){ S.pref[s.dataset.pref]=s.value; save(); renderTray(); return; }
+  var kd=e.target.closest('[data-kid]'); if(kd){ S.kids[+kd.dataset.kid]=kd.value; save(); }
+});
+document.addEventListener('keydown',function(e){
+  if($('#flip').classList.contains('open')){ if(e.key==='ArrowRight'){ fbGo(1); return; } if(e.key==='ArrowLeft'){ fbGo(-1); return; } if(e.key==='Escape'){ closeFlip(); return; } }
+  if(e.key==='Escape'){ $('#sheet').classList.remove('open'); closeModal(); } });
+// Scroll reveal for boxes below the fold
+var RV_SEL='.cat,.cta-card,.how,.band,.person,.act,.split > .ph,.sent .next > div,.extras .act';
+function reveal(){
+  if(!('IntersectionObserver' in window)) return;
+  try{ if(matchMedia('(prefers-reduced-motion: reduce)').matches) return; }catch(e){}
+  var vh=window.innerHeight||800;
+  var io=new IntersectionObserver(function(es){ es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } }); },{rootMargin:'0px 0px -6% 0px'});
+  Array.prototype.forEach.call(app.querySelectorAll(RV_SEL),function(el){
+    var r=el.getBoundingClientRect(); if(r.top<vh && r.bottom>0) return;
+    el.classList.add('rv'); io.observe(el);
+  });
+}
+new MutationObserver(function(){ requestAnimationFrame(reveal); }).observe(app,{childList:true});
+route();
+try{ if(matchMedia('(prefers-reduced-motion: reduce)').matches){ document.addEventListener('play',function(e){ if(e.target.classList&&e.target.classList.contains('hero-video')) e.target.pause(); },true); } }catch(e){}
+})();
+</script>
+</body>
+</html>

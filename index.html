@@ -130,6 +130,7 @@ section.block{padding:88px 0 0}
 @media (max-width:620px){.cats{grid-template-columns:1fr}}
 .cat{background:var(--surface);border:1px solid var(--line);border-radius:22px;overflow:hidden;display:flex;flex-direction:column;text-align:left;cursor:pointer;padding:0;color:var(--ink)}
 .cat:hover{border-color:var(--ink)}
+a.cat{text-decoration:none}
 .cat .ph{border-radius:0;height:190px}
 .cat .body{padding:20px 22px 22px;display:flex;flex-direction:column;gap:6px}
 .cat h3{font-size:24px}
@@ -158,7 +159,8 @@ section.block{padding:88px 0 0}
 @media (max-width:860px){.split{grid-template-columns:1fr;gap:28px}}
 
 footer.site{background:var(--panel);color:var(--panel-ink);margin-top:96px;padding:56px 0 64px}
-footer.site .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:40px}
+footer.site .wrap{display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr 1fr;gap:32px}
+@media (max-width:980px){footer.site .wrap{grid-template-columns:1fr 1fr 1fr}}
 footer.site .col{display:flex;flex-direction:column;gap:8px;font-size:15px;color:var(--panel-muted)}
 footer.site .col b{color:var(--panel-ink)}
 @media (max-width:760px){footer.site .wrap{grid-template-columns:1fr}}
@@ -503,7 +505,7 @@ footer.site a:hover,.flink:hover{text-decoration:underline;text-underline-offset
     <div id="topright"></div>
   </div>
 </header>
-<main id="app"><noscript><div class="wrap" style="padding:64px 32px"><h1>Lapland Travel Assistant</h1><p style="margin-top:16px">Our trip builder needs JavaScript. You can also email us at <a href="mailto:laplandtravelassistant@gmail.com">laplandtravelassistant@gmail.com</a>.</p></div></noscript></main>
+<main id="app"><noscript><div class="wrap" style="padding:64px 32px"><h1>Lapland Travel Assistant</h1><p style="margin-top:16px">Our trip builder needs JavaScript. You can also email us at <a href="mailto:laplandtravelassistant@gmail.com">laplandtravelassistant@gmail.com</a>.</p><p style="margin-top:16px">Travel tips: <a href="/when-does-it-snow-in-rovaniemi/">When does it snow in Rovaniemi?</a> · <a href="/what-to-wear-in-rovaniemi/">What to wear in Rovaniemi</a></p></div></noscript></main>
 <div class="mbar" id="mbar"></div>
 <div class="sheet" id="sheet" role="dialog" aria-modal="true" aria-label="Your trip"><div class="inner" id="sheetInner"></div></div>
 <div class="modal" id="modal" role="dialog" aria-modal="true" aria-label="Package"><div class="modal-in" id="modalInner"></div></div>
@@ -1574,6 +1576,7 @@ function footerHTML(){
   return '<footer class="site" id="contact"><div class="wrap"><div class="col"><b style="font-family:var(--logo);letter-spacing:.1em;font-size:20px">LAPLAND</b> <span style="font-family:var(--logo);letter-spacing:.34em;font-size:9px">TRAVEL ASSISTANT</span><span style="margin-top:14px">Rovaniemi, Finland</span></div>'+
    '<div class="col"><b>Contact</b><a href="mailto:'+CONTACT.email+'">'+CONTACT.email+'</a><button type="button" class="flink" data-go="/ask" style="margin-top:10px">Ask a question</button></div>'+
    '<div class="col"><b>Experiences</b><a href="/northern-lights/">Northern lights tours</a><a href="/huskies/">Husky safaris</a><a href="/reindeer/">Reindeer sleigh rides</a><a href="/snowmobiling/">Snowmobile safaris</a><a href="/winter-adventures/">Winter adventures</a></div>'+
+   '<div class="col"><b>Travel tips</b><a href="/when-does-it-snow-in-rovaniemi/">When does it snow?</a><a href="/what-to-wear-in-rovaniemi/">What to wear</a></div>'+
    '<div class="col"><b>Good to know</b><button type="button" class="flink" data-go="/terms">Booking terms</button><button type="button" class="flink" data-go="/cancellation">Cancellation policy</button><button type="button" class="flink" data-go="/privacy">Privacy policy</button><button type="button" class="flink" data-go="/cookies">Cookies</button><button type="button" class="flink" onclick="window.ltaCookieSettings&&ltaCookieSettings()">Cookie settings</button></div></div></footer>';
 }
 function viewAbout(){
@@ -1644,6 +1647,11 @@ function viewHome(){
      '<li><span class="num">2</span><h3>Pick what you’d love</h3><p>Open a category, add the experiences you like and tell us anything we should know.</p></li>'+
      '<li><span class="num">3</span><h3>We check and book it</h3><p>We check availability with our partners, send your plan with prices and book it all once you’re happy.</p></li>'+
    '</ol><div style="margin-top:40px"><a class="btn gold" href="#/plan">Start building your trip</a></div></div></section>'+
+   '<section class="block" id="tips"><div class="sec-head"><div><span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Travel tips</span><h2>Before you go</h2><p>Local advice for planning a winter trip to Rovaniemi.</p></div></div>'+
+     '<div class="cats two">'+
+       '<a class="cat" href="/when-does-it-snow-in-rovaniemi/">'+pic('images/snowshoe.webp','snowy forest near Rovaniemi',190,'border-radius:0')+'<div class="body"><h3>When does it snow in Rovaniemi?</h3><p class="d">When the snow arrives, what each month is like and the best time to visit for snow.</p><span class="n">Read the guide '+ico('right',16)+'</span></div></a>'+
+       '<a class="cat" href="/what-to-wear-in-rovaniemi/">'+pic('images/rental-1.webp','winter clothing set with jacket, trousers, mittens and boots',190,'border-radius:0')+'<div class="body"><h3>What to wear in Rovaniemi</h3><p class="d">How to dress for the Arctic cold, what to wear for each activity and a packing checklist.</p><span class="n">Read the guide '+ico('right',16)+'</span></div></a>'+
+     '</div></section>'+
    '<section class="block" id="clothing"><div class="band"><div class="split"><div>'+
      '<span class="eyebrow">'+'<svg width="12" height="12" viewBox="0 0 40 40" aria-hidden="true"><path d="M20 0 Q20 20 40 20 Q20 20 20 40 Q20 20 0 20 Q20 20 20 0 Z" fill="currentColor"/></svg>'+'Clothing rental</span><h2>Warm clothing for your whole stay</h2>'+
      '<p>Many visitors meet real Arctic winter for the first time here, and it can get as cold as −30°C. Most of our activities include warm overalls and boots for the tour itself. If you’d like proper winter gear for the rest of your stay too, we can arrange a full set for you.</p>'+
